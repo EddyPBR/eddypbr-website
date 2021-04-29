@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --purple-darker: #2215EF;
+  --purple-dark: #443AEE;
+  --purple: #645CEE;
+  --puple-light: #8680EF;
+  --purple-lighter: #A6A1F2;
+
+  --pink-darker: #B71051;
+  --pink-dark: #D0165E;
+  --pink: #E4216D;
+  --pink-light: #E44482;
+  --pink-lighter: #E66598;
+  
+  --green-lighter: #85DB98;
+  --green-light: #67D57F;
+  --green: #49D167;
+  --green-dark: #2DC84F;
+  --green-darker: #24AE42;
+
+  --cyan-darker: #1CA0CA;
+  --cyan-dark: #2BB3DE;
+  --cyan: #4DBCDF;
+  --cyan-light: #6EC6E2;
+  --cyan-lighter: #8ED1E6;
+
+  --black-darker: #0F1824;
+  --black-dark: #172436;
+  --black: #203046;
+  --black-light: #2F415B;
+  --black-lighter: #465A77;
+
+  --gray-darker: #546A87;
+  --gray-dark: #7C8CA2;
+  --gray: #AAB1BB;
+  --gray-light: #C0C4C9;
+  --gray-lighter: #D4D6D8;
+
+  --white: #F0F4FA;
+  --white-dark: #E0E9F5;
+  --color-background: #F5F5F5;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%
+  }
+}
+
+body {
+  background: var(--color-background);
+}
+
+body, input, textarea, button {
+  font: 400 1rem Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-family: Raleway, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+}
