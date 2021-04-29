@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import styles from "./home.module.scss";
 
 import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
@@ -6,6 +8,9 @@ export default function Home() {
   return (
     <div className={styles.presentation}>
       <main>
+        <Head>
+          <title>Início | EddyPBR</title>
+        </Head>
         
         <div>
           <p>Olá, me chamo</p>

@@ -12,7 +12,6 @@ export default class MyDocument extends Document {
           />
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
           <meta name="theme-color" content="#645CEE"/>
-          <title>Home | EddyPBR</title>
         </Head>
         <body>
           <Main />
