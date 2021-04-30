@@ -8,12 +8,12 @@ import styles from "./home.module.scss";
 
 export default function Home() {
   return (
-    <div className={styles.presentation}>
-      <main>
-        <Head>
-          <title>Início | EddyPBR</title>
-        </Head>
-        
+    <main className={styles.presentation}>
+      <Head>
+        <title>Início | EddyPBR</title>
+      </Head>
+
+      <div className={styles.content}>
         <div>
           <p>Olá, me chamo</p>
           <h1>Edvaldo Junior,</h1>
@@ -26,7 +26,7 @@ export default function Home() {
           <img src="./assets/desenvolvedor-e-computador.svg" alt="EddyPBR" />
         </div>
 
-      </main>
-    </div>
+      </div>
+    </main>
   );
 }
