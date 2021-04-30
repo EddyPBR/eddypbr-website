@@ -80,6 +80,7 @@
   & > h1 {
     font-size: 3rem;
     color: #203046;
+    text-align: center;
   }
 
   & > div {
@@ -87,9 +88,40 @@
     margin-bottom: 96px; // IF CREATE ANOTHER ELEMENT BELOW THIS;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    width: 100%;
+
+    @media(max-width:1024px) {
+      display: block;
+      overflow-x: scroll;
+    }
+  }
+}
+
+.listSkills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  width: 100%;
+
+  & > li {
+    list-style: none;
+  }
+
+  @media(max-width:1024px) {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 12px;
+    gap: 40px;
+    width: 100%;
+    padding-right: 40px;
+
+    & > li:last-child > div {
+      margin-right: 12px;
+    }
   }
 }
