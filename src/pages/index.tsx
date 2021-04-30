@@ -31,6 +31,15 @@ export default function Home() {
         </div>
       </main>
 
+      <article className={styles.about}>
+        <h1>Sobre mim</h1>
+        <p>Meu nome é Edvaldo Junior tenho estudado programação desde o início de 2017 e me apaixonei no meu primeiro "Hello world", desde então sempre tento aprender coisas novas relacionadas ao desenvolvimento de softwares, e nunca parei de estudar sobre.</p>
+        <p>No passar dos anos eu iniciei vários projetos remunerados e não remunerados,  e fui adquirindo experiência não somente com a programação, mas com o atendimento ao clientes, abstração e resolução dos problemas deles, mas as coisas tomaram um novo rumo quando foquei na MERN STACK.</p>
+        <p>Com a MERN STACK eu comecei elaborar sistemas completos com backend, frontend e mobile todos se comunicando fazendo parte de um mesmo sistema, e isso com velocidade, o que me proporcionou reconhecimento profissional.</p>
+        <p>Atualmente não somente atuo como freelancer, mas também tenho um trabalho fixo na empresa Rally Motos uma das maiores distribuidoras e importadoras de moto peças do Brasil e tem sido uma experiencia incrível trabalhar com eles.</p>
+        <p>Sem mais, ainda estou aberto a projetos novos com/sem fins lucrativos, e estou disposto a ajudar a comunidade de desenvolvedores a evoluirem, então se ficou interessado, entra em contato podemos conversar sempre para espandirmos nossos horizontes.</p>
+      </article>
+
       <section className={styles.skill}>
         <h1>Minhas Habilidades</h1>
         <div>
