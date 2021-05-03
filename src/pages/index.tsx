@@ -3,6 +3,8 @@ import Head from "next/head";
 import SocialLinks from "../components/SocialLinks";
 import SkillCard from "../components/SkillCard";
 
+import { AiFillFileText } from "react-icons/ai";
+
 import styles from "./home.module.scss";
 
 export default function Home() {
@@ -56,6 +58,15 @@ export default function Home() {
           </ul>
         </div>
       </section>
+    
+      <div className={styles.box}>
+        <b>Gostaria de conhecer melhor meu currículo e experiência?</b>
+        <a href="https://docs.google.com/document/d/1QjWrx93R_4-dgaksFqHBpHem5Do2PfaaMmXEGV8NcLM/edit?usp=sharing" rel="noopener noreferrer" target="_blank">
+          <AiFillFileText size={22} />
+          Acessar currículo
+        </a>
+      </div>
+
     </>
   );
 }
