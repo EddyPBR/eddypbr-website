@@ -1,0 +1,55 @@
+.project {
+  width: 90vw;
+  max-width: 1080px;
+  
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+
+  & > div {
+    margin-bottom: 120px;
+  }
+}
+
+.image {
+  max-width: 570px;
+  width: 90vw;
+
+  & > img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 4px 4px 12px 4px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.content {
+  width: 90vw;
+  max-width: 470px;
+  margin-bottom: 24px;
+
+  & > h1 {
+    font: 700 2.25rem "Raleway", sans-serif;
+    color: var(--white);
+    text-align: left;
+    margin-bottom: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    &::after {
+      content: "";
+      display: relative;
+      width: 80%;
+      height: 4px;
+      background: var(--purple);
+      margin-top: 8px;
+    }
+  }
+
+  & > p {
+    font: 400 0.875rem "Roboto", sans-serif;
+    line-height: 1.5rem;
+    text-align: left;
+    color: var(--white-dark);
+  }
+}
