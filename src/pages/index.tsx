@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import SocialLinks from "../components/SocialLinks";
 import SkillCard from "../components/SkillCard";
+import Project from "../components/Project";
 
 import { AiFillFileText } from "react-icons/ai";
 
@@ -24,7 +25,7 @@ export default function Home() {
               espero que goste!
             </h2>
 
-            <SocialLinks github instagram linkedin />
+            <SocialLinks github="https://github.com/EddyPBR/" instagram="https://www.instagram.com/edvaldo_junior_dev/" linkedin="https://www.linkedin.com/in/edvaldojuniordev/" />
           </div>
 
           <div>
@@ -66,6 +67,15 @@ export default function Home() {
           Acessar currículo
         </a>
       </div>
+
+      <section className={styles.projects}>
+        <h1>Projetos</h1>
+        <p>Conheça alguns dos projetos que desenvolvi durante meus anos como desenvolvedor, caso tenha o ícone do github, sinta-se livre para testar o projeto em sua máquina.</p>
+
+        <div>
+          <Project title="Mural digital" text="Na Rally Motos importadora e distribuidora, os avisos são colocados em uma página web e tambem no aplicativo da própria empresa para disponibilizar novos assuntos como conquistas, metas batidas, aniversáriantes e afins." image="./assets/mural-digital.gif" />
+        </div>
+      </section>
 
     </>
   );
