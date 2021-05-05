@@ -3,9 +3,9 @@ import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
 import styles from "./styles.module.scss";
 
 type socialLinksProps = {
-  github: boolean;
-  instagram: boolean;
-  linkedin: boolean;
+  github?: string;
+  instagram?: string;
+  linkedin?: string;
 };
 
 export default function SocialLinks({ github, instagram, linkedin }: socialLinksProps) {
@@ -14,7 +14,7 @@ export default function SocialLinks({ github, instagram, linkedin }: socialLinks
       {github && (
         <li>
           <a
-            href="https://github.com/EddyPBR/"
+            href={github}
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -26,7 +26,7 @@ export default function SocialLinks({ github, instagram, linkedin }: socialLinks
       {instagram && (
         <li>
           <a
-            href="https://www.instagram.com/edvaldo_junior_dev/"
+            href={instagram}
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -38,7 +38,7 @@ export default function SocialLinks({ github, instagram, linkedin }: socialLinks
       {linkedin && (
         <li>
           <a
-            href="https://www.linkedin.com/in/edvaldojuniordev/"
+            href={linkedin}
             rel="noopener noreferrer"
             target="_blank"
           >
