@@ -8,6 +8,17 @@
 
   & > div {
     margin-bottom: 120px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
   }
 }
 
@@ -26,6 +37,11 @@
   width: 90vw;
   max-width: 470px;
   margin-bottom: 24px;
+
+  @media (max-width: 768px) {
+    max-width: 570px;
+    margin-bottom: 40px;
+  }
 
   & > h1 {
     font: 700 2.25rem "Raleway", sans-serif;
