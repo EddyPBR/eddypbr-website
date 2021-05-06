@@ -1,4 +1,4 @@
-import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
+import { FiGithub, FiInstagram, FiLinkedin, FiGlobe } from "react-icons/fi";
 
 import styles from "./styles.module.scss";
 
@@ -6,9 +6,10 @@ type socialLinksProps = {
   github?: string;
   instagram?: string;
   linkedin?: string;
+  website?: string;
 };
 
-export default function SocialLinks({ github, instagram, linkedin }: socialLinksProps) {
+export default function SocialLinks({ github, instagram, linkedin, website }: socialLinksProps) {
   return (
     <ul className={styles.socialLinks}>
       {github && (
@@ -43,6 +44,18 @@ export default function SocialLinks({ github, instagram, linkedin }: socialLinks
             target="_blank"
           >
             <FiLinkedin size={24} />
+          </a>
+        </li>
+      )}
+
+      {website && (
+        <li>
+          <a
+            href={website}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <FiGlobe size={24} />
           </a>
         </li>
       )}

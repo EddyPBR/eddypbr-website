@@ -73,7 +73,7 @@ export default function Home() {
         <p>Conheça alguns dos projetos que desenvolvi durante meus anos como desenvolvedor, caso tenha o ícone do github, sinta-se livre para testar o projeto em sua máquina.</p>
 
         <div>
-          <Project title="Mural digital" text="Na Rally Motos importadora e distribuidora, os avisos são colocados em uma página web e tambem no aplicativo da própria empresa para disponibilizar novos assuntos como conquistas, metas batidas, aniversáriantes e afins." image="./assets/mural-digital.gif" />
+          <Project title="Mural digital" text="Na Rally Motos importadora e distribuidora, os avisos são colocados em uma página web e tambem no aplicativo da própria empresa para disponibilizar novos assuntos como conquistas, metas batidas, aniversáriantes e afins." image="/assets/mural-digital.gif" github="https://github.com/EddyPBR/mural-digital" website="https://www.rallymotosmural.ml/" />
         </div>
       </section>
 

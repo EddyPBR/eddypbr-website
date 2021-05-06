@@ -53,4 +53,14 @@
       color: var(--white);
     }
   }
+
+  li:nth-child(4) > a {
+    background: var(--pink);
+    color: var(--white-dark);
+
+    &:hover {
+      background: var(--pink-dark);
+      color: var(--white);
+    }
+  }
 }
