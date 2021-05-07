@@ -3,6 +3,7 @@ import Head from "next/head";
 import SocialLinks from "../components/SocialLinks";
 import SkillCard from "../components/SkillCard";
 import Project from "../components/Project";
+import Carousel from "../components/Carousel";
 
 import { AiFillFileText } from "react-icons/ai";
 
@@ -72,11 +73,12 @@ export default function Home() {
         <h1>Projetos</h1>
         <p>Conheça alguns dos projetos que desenvolvi durante meus anos como desenvolvedor, caso tenha o ícone do github, sinta-se livre para testar o projeto em sua máquina.</p>
 
-        <div>
-          <Project title="Mural digital" text="Na Rally Motos importadora e distribuidora, os avisos são colocados em uma página web e tambem no aplicativo da própria empresa para disponibilizar novos assuntos como conquistas, metas batidas, aniversáriantes e afins." image="/assets/mural-digital.gif" github="https://github.com/EddyPBR/mural-digital" website="https://www.rallymotosmural.ml/" />
-        </div>
+        <Carousel>
+          <Project title="Mural digital" text="Na Rally Motos importadora e distribuidora, os avisos são colocados em uma página web e tambem no aplicativo da própria empresa para disponibilizar novos assuntos como conquistas, metas batidas, aniversáriantes e afins." image="/assets/mural-digital.jpg" github="https://github.com/EddyPBR/mural-digital" website="https://www.rallymotosmural.ml/" />
+          <Project title="Project Advisor 3000" text="O Project Advisor 3000 consiste em uma plataforma de gerenciamento de projetos com etapas que devem ser alcançadas o usuário realiza o cadastro cria seus projetos e estipula as etapas que devem ser alcançadas." image="/assets/project-advisor-3000.jpg" github="https://github.com/EddyPBR/project-advisor-3000/" />
+          <Project title="Move.it" text="O projeto consiste em um contador de 25 minutos, quando o contador finaliza o tempo é mostrado um desafio de relaxamento corporal ou visual, onde o usuário pode ou não completa-lo." image="/assets/move-it.jpg" github="https://github.com/EddyPBR/move-it/" website="https://move-it-eddypbr.vercel.app/" />
+        </Carousel>
       </section>
-
     </>
   );
 }
