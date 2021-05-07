@@ -1,0 +1,38 @@
+.carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90vw;
+  max-width: 1080px;
+  overflow-x: scroll;
+  padding-bottom: 16px;
+
+  & > * {
+    margin-right: 172px;
+  }
+
+  & > *:last-child {
+    margin-right: 0;
+  }
+
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 8px;
+  }
+
+  &::-webkit-scrollbar-track-piece {
+    background-color: var(--black-lighter);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--purple);
+    border-radius: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    cursor: pointer;
+  }
+}
