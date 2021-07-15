@@ -1,12 +1,25 @@
 import Head from "next/head";
 
+import { Header, Container } from "../styles/Home";
+
 export default function Home() {
   return (
-    <main>
+    <Header>
       <Head>
         <title>Início | EddyPBR</title>
       </Head>
-      <h1>New index</h1>
-    </main>
+      <Container>
+        <main>
+          <h1>
+            <span>Olá, me chamo</span>
+            Edvaldo Junior
+          </h1>
+          <p>
+            Desenvolvedor fullstack contruindo sistemas com servidores, websites e aplicativos mobile todos integrando um único sistema
+          </p>
+        </main>
+        
+      </Container>
+    </Header>
   );
 }
