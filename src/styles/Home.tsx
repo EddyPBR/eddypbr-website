@@ -1,46 +1,46 @@
 import styled from "styled-components";
 
-export const Header = styled.header`
+export const Background = styled.div`
   width: 100%;
   height: 100vh;
   background-image: url("./images/header-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: absolute;
+  z-index: -1;
+`;
 
-  > div {
-    width: 90vw;
-    max-width: 97.0rem;
-    margin: 0 auto;
+export const Container = styled.div`
+  width: 100%;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 
-    > main {
-      width: 100%;
-      max-width: 37.2rem;
-      padding-top: 12.0rem;
+  > nav {
+    margin: 4.8rem 0 0 10rem;
+  }
+`;
 
-      span {
-        display: block;
-        color: ${props => props.theme.colors.headingLight};
-        font: ${props => props.theme.fonts.subtitle};
-      }
+export const Main = styled.main`
+  width: 100%;
+  max-width: 37.2rem;
+  margin: 12rem 0 0 10rem;
 
-      p {
-        font-family: "Nunito", sans-serif;
-      }
-    }
+  span {
+    display: block;
+    color: ${props => props.theme.colors.headingLight};
+    font: ${props => props.theme.fonts.subtitle};
+  }
 
-    > nav {
-      margin-top: 4.8rem;
-    }
+  p {
+    font-family: "Nunito", sans-serif;
   }
 `;
 
 export const Services = styled.section`
-  width: 90vw;
-  max-width: 117rem;
-  margin: 0 auto;
-  margin-top: -28rem;
-
+  margin-top: 14.8rem;
   display: flex;
   align-items: flex-start;
   gap: 3.0rem;
