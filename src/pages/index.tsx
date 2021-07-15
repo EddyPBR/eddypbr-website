@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+import { Navbar } from "../components/Navbar";
+
 import { Header, Container } from "../styles/Home";
 
 export default function Home() {
@@ -18,7 +20,8 @@ export default function Home() {
             Desenvolvedor fullstack contruindo sistemas com servidores, websites e aplicativos mobile todos integrando um único sistema
           </p>
         </main>
-        
+
+        <Navbar />
       </Container>
     </Header>
   );

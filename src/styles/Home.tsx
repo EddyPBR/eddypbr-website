@@ -29,4 +29,8 @@ export const Container = styled.div`
       font-family: "Nunito", sans-serif;
     }
   }
+
+  > nav {
+    margin-top: 4.8rem;
+  }
 `;
