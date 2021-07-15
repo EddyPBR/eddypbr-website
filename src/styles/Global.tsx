@@ -15,10 +15,12 @@ export const GlobalStyle = createGlobalStyle`
   
   h1, h2, h3, h4, h5, h6 {
     font: ${props => props.theme.fonts.title};
+    color: ${props => props.theme.colors.headingLight};
   }
 
   p, span {
     font: ${props => props.theme.fonts.text};
+    line-height: 2.4rem;
   }
 
   strong, b {

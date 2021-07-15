@@ -8,9 +8,9 @@ export const theme = {
     secondary: "#E4216D",
     secondaryLight: "#E44482",
 
-    headingDark: "#AAB1BB",
-    heading: "#C0C4C9",
-    headingLight: "#D4D6D8",
+    headingDark: "#7C8CA2",
+    heading: "#AAB1BB",
+    headingLight: "#C0C4C9",
 
     background: "#090E14",
   },
