@@ -15,6 +15,7 @@ declare module "styled-components" {
       heading: string;
       headingLight: string;
 
+      black: string;
       white: string;
 
       background: string;

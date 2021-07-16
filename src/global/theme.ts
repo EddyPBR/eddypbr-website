@@ -12,6 +12,7 @@ export const theme = {
     heading: "#AAB1BB",
     headingLight: "#C0C4C9",
 
+    black: "#0B0F14",
     white: "#FFF",
 
     background: "#090E14",
