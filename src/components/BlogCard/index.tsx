@@ -2,15 +2,16 @@ import Link from "next/link";
 
 import { Card } from "./styles";
 
-type BlogCardProps = {
+export type BlogCardProps = {
   title: string;
   url: string;
+  imgUrl: string;
 }
 
-export function BlogCard({ title, url }: BlogCardProps) {
+export function BlogCard({ title, url, imgUrl }: BlogCardProps) {
   return(
     <Card>
-      <img src="https://images.ctfassets.net/hrltx12pl8hq/4plHDVeTkWuFMihxQnzBSb/aea2f06d675c3d710d095306e377382f/shutterstock_554314555_copy.jpg" alt="test" />
+      <img src={imgUrl} alt="test" />
 
       <div>
         <strong>{title}</strong>

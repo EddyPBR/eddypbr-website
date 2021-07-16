@@ -41,17 +41,9 @@ export const Card = styled.article`
       text-align: center;
       font-weight: bold;
 
-      background: transparent;
-      border: 1px solid ${props => props.theme.colors.secondary };
+      color: ${props => props.theme.colors.white};
+      background-color: ${props => props.theme.colors.secondary};
       border-radius: .24rem;
-
-      transition: background .2s, color .2s;
-
-      :hover {
-        background-color: ${props => props.theme.colors.secondary };
-        color: ${props => props.theme.colors.white };
-        filter: brightness(1);
-      }
     }
   }
 
