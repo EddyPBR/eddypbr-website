@@ -64,3 +64,31 @@ export const Services = styled.section`
     }
   }
 `;
+
+export const Skills = styled.section`
+  width: 100%;
+  height: 88.7rem;
+  background-image: url("./images/skill-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  margin-top: 18.8rem;
+  padding: 10rem 0px;
+
+  > div {
+    gap: 6rem;
+
+    > article:nth-child(1) {
+      margin-left: 20rem;
+    }
+
+    > article:nth-child(2) {
+      margin-left: 30rem;
+    }
+
+    > article:nth-child(3) {
+      margin-left: 40rem;
+    }
+  }
+`;

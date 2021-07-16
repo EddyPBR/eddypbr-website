@@ -2,8 +2,9 @@ import Head from "next/head";
 
 import { Navbar } from "../components/Navbar";
 import { BlogAside } from "../components/BlogAside";
+import { SkillCard } from "../components/SkillCard";
 
-import { Background, Container, Main, Services } from "../styles/Home";
+import { Background, Container, Main, Services, Skills } from "../styles/Home";
 
 export default function Home() {
   const blogs = [
@@ -64,8 +65,32 @@ export default function Home() {
         </Services>
 
         <BlogAside blogs={blogs} />
-
       </Container>
+
+      <Skills>
+        <Container>
+          <SkillCard 
+            title="NodeJS"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices dui nec mi vehicula rhoncus ut a risus."
+            imgUrl="./images/nodejs-eddypbr-skills.png"
+            color="#539E43"
+          />
+
+          <SkillCard 
+            title="NextJS"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices dui nec mi vehicula rhoncus ut a risus."
+            imgUrl="./images/nextjs-eddypbr-skills.png"
+            color="#E44482"
+          />
+
+          <SkillCard 
+            title="React"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices dui nec mi vehicula rhoncus ut a risus."
+            imgUrl="./images/react-eddypbr-skills.png"
+            color="#4DBCDF"
+          />
+        </Container>
+      </Skills>
     </>
   );
 }
