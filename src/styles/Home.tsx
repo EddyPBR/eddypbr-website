@@ -210,3 +210,34 @@ export const Portfolio = styled.section`
     }
   }
 `;
+
+export const Testimonials = styled.section`
+  margin-top: 24rem;
+  height: 72rem;
+  width: 117rem;
+  overflow: hidden;
+  margin: 0 auto;
+
+  > h1, > p {
+    text-align: center;
+  }
+
+  & > article {
+    margin-top: 16rem;
+
+    & > figure:nth-child(1) {
+      margin-left: 3.2rem;
+      animation: ${upToDown(-2.2)} 4.8s ease-in-out infinite alternate;
+    }
+
+    & > figure:nth-child(2) {
+      margin-left: 73.2rem;
+      animation: ${upToDown(-8)} 5.2s ease-in-out infinite alternate;
+    }
+
+    & > figure:nth-child(3) {
+      margin-left: 32.2rem;
+      animation: ${upToDown(5.8)} 4.2s ease-in-out infinite alternate;
+    }
+  }
+`;
