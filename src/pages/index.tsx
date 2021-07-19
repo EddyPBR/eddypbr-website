@@ -1,10 +1,13 @@
 import Head from "next/head";
+import Link from "next/link";
+
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa"
 
 import { Navbar } from "../components/Navbar";
 import { BlogAside } from "../components/BlogAside";
 import { SkillCard } from "../components/SkillCard";
 
-import { Background, Container, Main, Services, Skills } from "../styles/Home";
+import { Background, Container, Main, Services, Skills, Portfolio } from "../styles/Home";
 
 export default function Home() {
   const blogs = [
@@ -91,6 +94,34 @@ export default function Home() {
           />
         </Container>
       </Skills>
+
+      <Container>
+        <Portfolio>
+          <article>
+            <h1>Meu portfólio</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices dui nec mi vehicula rhoncus ut a risus. Sed placerat tellus ut mi rhoncus, sit amet consectetur enim egestas. Nulla mi diam, posuere non tincidunt id, accumsan sed metus.</p>
+            <Link href="#">
+              <a>Ver portfólio</a>
+            </Link>
+          </article>
+
+          <div>
+            <img src="./images/guy.svg" alt="Redes sociais" />
+
+            <div>
+              <Link href="#">
+                <a><FaFacebookF /></a>
+              </Link>
+              <Link href="#">
+                <a><FaInstagram /></a>
+              </Link>
+              <Link href="#">
+                <a><FaLinkedinIn /></a>
+              </Link>
+            </div>
+          </div>
+        </Portfolio>
+      </Container>
     </>
   );
 }

@@ -1,4 +1,13 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const upToDown = (marginTop: number) => keyframes`
+  from {
+    margin-top: ${marginTop}rem;
+  }
+  to {
+    margin-top: ${marginTop - 6.6}rem;
+  }
+`;
 
 export const Background = styled.div`
   width: 100%;
@@ -89,6 +98,108 @@ export const Skills = styled.section`
 
     > article:nth-child(3) {
       margin-left: 40rem;
+    }
+  }
+`;
+
+export const Portfolio = styled.section`
+  width: 90vw;
+  max-width: 117rem;
+  margin: 0 auto;
+  margin-top: 17.6rem;
+  display: flex;
+  justify-content: space-between;
+
+  > article {
+    max-width: 37rem;
+
+    h1 {
+      color: ${props => props.theme.colors.primaryLight};
+    }
+
+    a {
+      margin-top: 3.2rem;
+      width: 14rem;
+      height: 4.8rem;
+      font-weight: bold;
+      font-family: "Roboto", sans-serif;
+      color: ${props => props.theme.colors.primary};
+      border: 0.1rem solid ${props => props.theme.colors.primaryDark};
+      border-radius: 0.8rem;
+
+      transition: background .2s, color .2s;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background-color: ${props => props.theme.colors.primaryDark};
+        color: ${props => props.theme.colors.white};
+        filter: brightness(1);
+      }
+    }
+  }
+
+  > div {
+    width: 100%;
+    max-width: 42rem;
+    
+    display: flex;
+    justify-content: space-between;
+
+    & > img {
+      width: 100%;
+      max-width: 23.3rem; 
+    }
+
+    & > div {
+      margin-top: -8rem;
+
+      a {
+        width: 6.4rem;
+        height: 6.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid ${props => props.theme.colors.primary};
+        border-radius: 50%;
+
+        transition: border-color .2s;
+
+        position: absolute;
+
+        > svg {
+          color: ${props => props.theme.colors.primary};
+          font-size: 2.4rem;
+          transition: color .2s;
+        }
+      }
+
+      a:hover {
+        border-color: ${props => props.theme.colors.secondary};
+        animation-play-state: paused !important;
+        
+        > svg {
+          color: ${props => props.theme.colors.secondary};
+        }
+      }
+
+      a:nth-child(1) {
+        margin-left: -12.8rem;
+        animation: ${upToDown(0)} 4s ease-in-out infinite alternate;
+      }
+
+      a:nth-child(2) {
+        margin-left: -9.6rem;
+        margin-top: 14.8rem;
+        animation: ${upToDown(14.8)} 3.6s ease-in-out infinite alternate;
+      }
+
+      a:nth-child(3) {
+        margin-top: 5.8rem;
+        animation: ${upToDown(5.8)} 3.2s ease-in-out infinite alternate;
+      }
     }
   }
 `;
