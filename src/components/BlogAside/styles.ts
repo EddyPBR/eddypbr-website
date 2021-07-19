@@ -7,7 +7,7 @@ export const Blogs = styled.aside`
   height: 100%;
   position: absolute;
   top: 12rem;
-  right: 12%;
+  margin-left: 87rem;
 
   display: flex;
   flex-direction: column;

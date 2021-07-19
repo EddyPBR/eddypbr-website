@@ -21,21 +21,21 @@ export const Background = styled.div`
 `;
 
 export const Container = styled.div`
-  width: 100%;
-  max-width: 90vw;
+  width: 90vw;
+  max-width: 117rem;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 
   > nav {
-    margin: 4.8rem 0 0 10rem;
+    margin-top: 4.8rem;
   }
 `;
 
 export const Main = styled.main`
   width: 100%;
   max-width: 37.2rem;
-  margin: 12rem 0 0 10rem;
+  margin-top: 12rem;
 
   span {
     display: block;
@@ -56,16 +56,23 @@ export const Services = styled.section`
 
   > div {
     width: 100%;
+    margin-left: -10rem;
     max-width: 27rem;
     height: 0.4rem;
     background-color: ${props => props.theme.colors.primary};
     border-radius: 999px;
-    margin-top: 3rem
+    margin-top: 3rem;
+    position: absolute;
   }
 
   > article {
     width: 100%;
     max-width: 37rem;
+    margin-left: 20rem;
+
+    > h1 {
+      color: ${props => props.theme.colors.primary};
+    }
 
     > p {
       line-height: 2.8rem;
@@ -89,15 +96,15 @@ export const Skills = styled.section`
     gap: 6rem;
 
     > article:nth-child(1) {
-      margin-left: 20rem;
+      margin-left: 0rem;
     }
 
     > article:nth-child(2) {
-      margin-left: 30rem;
+      margin-left: 10rem;
     }
 
     > article:nth-child(3) {
-      margin-left: 40rem;
+      margin-left: 20rem;
     }
   }
 `;
