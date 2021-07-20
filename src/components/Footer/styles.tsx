@@ -11,6 +11,10 @@ export const Foot = styled.footer`
   flex-direction: column;
   justify-content: center;
 
+  @media(max-width: 520px) {
+    padding: 1.6rem 0;
+  }
+
   > article {
     margin: 0 auto;
     width: 90vw;
@@ -20,6 +24,12 @@ export const Foot = styled.footer`
     grid-template-columns: 1fr 1fr;
     gap: 3.2rem;
 
+    @media(max-width: 520px) {
+      grid-template-columns: unset;
+      grid-template-rows: 1fr 1fr;
+      justify-content: center;
+    }
+
     > div:first-child {
       height:100%;
       display: flex;
@@ -28,6 +38,7 @@ export const Foot = styled.footer`
 
       > strong {
         font-size: 1.6rem;
+        text-align: center;
 
         > svg {
           color: ${props => props.theme.colors.primary};
@@ -49,6 +60,10 @@ export const Foot = styled.footer`
         &:hover {
           color: ${props => props.theme.colors.primary};
         }
+      }
+
+      @media(max-width: 520px) {
+        justify-self: center;
       }
     }
   }
