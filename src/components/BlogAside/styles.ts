@@ -121,7 +121,7 @@ export const Controlls = styled.div`
   flex-direction:column;
   justify-content: space-between;
   align-items: right;
-  margin-top: -46.8rem;
+  top: 11.8rem;
 
   > button {
     width: 3.2rem;

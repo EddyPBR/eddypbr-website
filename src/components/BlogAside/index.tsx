@@ -53,15 +53,15 @@ export function BlogAside({ blogs }: BlogAsideProps ) {
 
   return (
     <Blogs>
+      <Controlls>
+        <button type="button" onClick={nextItem} disabled={isAnimating}><AiOutlineArrowUp /></button>
+        <button type="button" onClick={previousItem} disabled={isAnimating}><AiOutlineArrowDown /></button>
+      </Controlls>
       <Carousel animateNext={animateNext} animatePrev={animatePrev}>
         {
           items.map(({ title, url, imgUrl }, index) => <BlogCard key={index} title={title} url={url} imgUrl={imgUrl} />)
         }
       </Carousel>
-      <Controlls>
-        <button type="button" onClick={nextItem} disabled={isAnimating}><AiOutlineArrowUp /></button>
-        <button type="button" onClick={previousItem} disabled={isAnimating}><AiOutlineArrowDown /></button>
-      </Controlls>
     </Blogs>
   );
 }
