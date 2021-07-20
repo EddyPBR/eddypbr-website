@@ -1,21 +1,5 @@
 import styled, { keyframes, css } from "styled-components";
 
-export const Blogs = styled.aside`
-  max-width: 27rem;
-  width: 100%;
-  max-height: 72rem;
-  height: 100%;
-  position: absolute;
-  top: 12rem;
-  margin-left: 87rem;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-`;
-
 type CarouselProps = {
   animateNext?: boolean;
   animatePrev?: boolean;
@@ -56,6 +40,22 @@ const fadeOut = keyframes`
     opacity: 0.24;
   }
 `
+
+export const Blogs = styled.aside`
+  max-width: 27rem;
+  width: 100%;
+  max-height: 72rem;
+  height: 100%;
+  /* position: absolute; */
+  /* top: 12rem; */
+  /* margin-left: 87rem; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+`;
 
 export const Carousel = styled.div<CarouselProps>`
   max-height: 66rem;
@@ -116,14 +116,12 @@ export const Carousel = styled.div<CarouselProps>`
 
 export const Controlls = styled.div`
   position: absolute;
-  width: 100%;
   height: 26rem;
   display: flex;
   flex-direction:column;
   justify-content: space-between;
   align-items: right;
-  margin-top: -2.4rem;
-  top: 2rem;
+  margin-top: -46.8rem;
 
   > button {
     width: 3.2rem;
@@ -132,10 +130,11 @@ export const Controlls = styled.div`
     border: none;
     outline: none;
     cursor: pointer;
-    transition: filter .2s;
+    transition: filter .2s, transform .2s;
 
     &:hover {
       filter: brightness(1.2);
+      transform: scale(1.08);
     }
 
     svg {
