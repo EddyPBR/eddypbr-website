@@ -288,10 +288,6 @@ export const Testimonials = styled.section`
   & > article {
     margin-top: 12rem;
 
-    & > figure {
-      position: absolute;
-    }
-
     & > figure:nth-child(1) {
       margin-top: -4rem;
       margin-left: 20rem;
@@ -314,6 +310,17 @@ export const Testimonials = styled.section`
       margin-top: 46rem;
       margin-left: 52rem;
       animation: ${upToDown(46, 3)} 4.4s ease-in-out infinite alternate;
+    }
+
+    & > figure {
+      position: absolute;
+      transition: box-shadow .3s,transform .3s;
+
+      &:hover {
+        animation-play-state: paused;
+        transform: scale(1.024);
+        box-shadow: .3rem .3rem 0rem 0rem ${props => props.theme.colors.primaryDark};
+      }
     }
   }
 `;

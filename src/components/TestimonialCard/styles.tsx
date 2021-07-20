@@ -4,7 +4,7 @@ export const Card = styled.figure`
   width: 32rem;
   height: 18rem;
   background-color: #0D151E;
-  box-shadow: 4px 4px 12px 1px rgba(0, 0, 0, 0.12);
+  box-shadow: 0.2rem 0.4rem 0.8rem rgba(0, 0, 0, 0.04);
   border-radius: 16px;
   padding: 2.2rem;
 
