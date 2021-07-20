@@ -256,8 +256,7 @@ export const ContactBox = styled.section`
 export const Testimonials = styled.section`
   min-height: 92rem;
   width: 117rem;
-  margin: 0 auto;
-  margin-top: 8rem;
+  margin: 8rem auto 8rem auto;
 
   > h1, > p {
     text-align: center;

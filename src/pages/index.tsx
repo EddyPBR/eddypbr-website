@@ -7,6 +7,7 @@ import { Navbar } from "../components/Navbar";
 import { BlogAside } from "../components/BlogAside";
 import { SkillCard } from "../components/SkillCard";
 import { TestimonialCard } from "../components/TestimonialCard";
+import { Footer } from "../components/Footer";
 
 import { Background, Container, Main, Services, Skills, Portfolio, ContactBox, Testimonials } from "../styles/Home";
 
@@ -144,6 +145,8 @@ export default function Home() {
           <TestimonialCard  imageUrl="https://avatars.githubusercontent.com/u/48658479?v=4" author="Edvaldo Junior" occupation="Desenvolvedor web" comment="Aliquam scelerisque, enim in ullamcorper venenatis, nibh urna laoreet ex, et laoreet nisi turpis quis nunc. Fusce condimentum dui at ligula tincidunt semper." />
         </article>
       </Testimonials>
+
+      <Footer />
     </>
   );
 }
