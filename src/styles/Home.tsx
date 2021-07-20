@@ -1,11 +1,11 @@
 import styled, { keyframes } from "styled-components";
 
-const upToDown = (marginTop: number) => keyframes`
+const upToDown = (marginTop: number, diferential: number) => keyframes`
   from {
     margin-top: ${marginTop}rem;
   }
   to {
-    margin-top: ${marginTop - 6.6}rem;
+    margin-top: ${marginTop - diferential}rem;
   }
 `;
 
@@ -194,28 +194,28 @@ export const Portfolio = styled.section`
 
       a:nth-child(1) {
         margin-left: -12.8rem;
-        animation: ${upToDown(0)} 4s ease-in-out infinite alternate;
+        animation: ${upToDown(0, 6.6)} 4s ease-in-out infinite alternate;
       }
 
       a:nth-child(2) {
         margin-left: -9.6rem;
         margin-top: 14.8rem;
-        animation: ${upToDown(14.8)} 3.6s ease-in-out infinite alternate;
+        animation: ${upToDown(14.8, 6.6)} 3.6s ease-in-out infinite alternate;
       }
 
       a:nth-child(3) {
         margin-top: 5.8rem;
-        animation: ${upToDown(5.8)} 3.2s ease-in-out infinite alternate;
+        animation: ${upToDown(5.8, 6.6)} 3.2s ease-in-out infinite alternate;
       }
     }
   }
 `;
 
+
 export const Testimonials = styled.section`
   margin-top: 24rem;
-  height: 72rem;
+  min-height: 92rem;
   width: 117rem;
-  overflow: hidden;
   margin: 0 auto;
 
   > h1, > p {
@@ -223,21 +223,34 @@ export const Testimonials = styled.section`
   }
 
   & > article {
-    margin-top: 16rem;
+    margin-top: 12rem;
+
+    & > figure {
+      position: absolute;
+    }
 
     & > figure:nth-child(1) {
-      margin-left: 3.2rem;
-      animation: ${upToDown(-2.2)} 4.8s ease-in-out infinite alternate;
+      margin-top: -4rem;
+      margin-left: 20rem;
+      animation: ${upToDown(-4, 3)} 4.8s ease-in-out infinite alternate;
     }
 
     & > figure:nth-child(2) {
-      margin-left: 73.2rem;
-      animation: ${upToDown(-8)} 5.2s ease-in-out infinite alternate;
+      margin-left: 68rem;
+      margin-top: 16rem;
+      animation: ${upToDown(16, 3)} 3.2s ease-in-out infinite alternate;
     }
 
     & > figure:nth-child(3) {
-      margin-left: 32.2rem;
-      animation: ${upToDown(5.8)} 4.2s ease-in-out infinite alternate;
+      margin-top: 32rem;
+      margin-left: 4rem;
+      animation: ${upToDown(32, 3)} 4s ease-in-out infinite alternate;
+    }
+
+    & > figure:nth-child(4) {
+      margin-top: 46rem;
+      margin-left: 52rem;
+      animation: ${upToDown(46, 3)} 4.4s ease-in-out infinite alternate;
     }
   }
 `;
