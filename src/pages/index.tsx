@@ -142,7 +142,7 @@ export default function Home() {
         </Container>
       </ContactBox>
 
-      <Testimonials>
+      <Testimonials id="feedback">
         <h1>Feedback</h1>
         <p>Alguns depoimentos de colegas de trabalho e clientes que já participaram de projetos comigo ao longo da minha carreira como desenvolvedor.</p>
 

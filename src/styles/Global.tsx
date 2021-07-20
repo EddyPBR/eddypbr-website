@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${props => props.theme.colors.background};
     color: ${props => props.theme.colors.heading};
     font-size: 62.5%;
+    scroll-behavior: smooth;
   }
   
   h1, h2, h3, h4, h5, h6 {

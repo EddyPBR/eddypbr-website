@@ -23,7 +23,7 @@ export function Navbar() {
         </a>
       </Link>
 
-      <Link href="#">
+      <Link href="#feedback">
         <a>
           Feedback
         </a>
