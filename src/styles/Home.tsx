@@ -211,12 +211,53 @@ export const Portfolio = styled.section`
   }
 `;
 
+export const ContactBox = styled.section`
+  width: 100%;
+  min-height: 14.6rem;
+  background-color: ${props => props.theme.colors.primaryDark};
+  filter: drop-shadow(0px 0.8rem 1.6rem rgba(0, 0, 0, 0.25));
+
+  display: flex;
+  align-items: center;
+
+  > div {
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  strong {
+    font-size: 1.8rem;
+    color: ${props => props.theme.colors.white};
+    text-align: center;
+  }
+
+  a {
+    height: 4.6rem;
+    width: 14rem;
+    border: 0.1rem solid ${props => props.theme.colors.white};
+    border-radius: 0.8rem;
+    font: ${props => props.theme.fonts.bold};
+    color: ${props => props.theme.colors.white};
+    transition: background-color .2s, box-shadow .2s, border-color .2s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: ${props => props.theme.colors.secondary};
+      border-color: ${props => props.theme.colors.secondary};
+      box-shadow: 0 .4rem .6rem rgba(0, 0, 0, 0.12);
+      filter: brightness(1);
+    }
+  }
+`;
 
 export const Testimonials = styled.section`
-  margin-top: 24rem;
   min-height: 92rem;
   width: 117rem;
   margin: 0 auto;
+  margin-top: 8rem;
 
   > h1, > p {
     text-align: center;

@@ -8,7 +8,7 @@ import { BlogAside } from "../components/BlogAside";
 import { SkillCard } from "../components/SkillCard";
 import { TestimonialCard } from "../components/TestimonialCard";
 
-import { Background, Container, Main, Services, Skills, Portfolio, Testimonials } from "../styles/Home";
+import { Background, Container, Main, Services, Skills, Portfolio, ContactBox, Testimonials } from "../styles/Home";
 
 export default function Home() {
   const blogs = [
@@ -124,6 +124,14 @@ export default function Home() {
         </Portfolio>
       </Container>
     
+      <ContactBox>
+        <Container>
+          <strong>Gostaria de fazer o orçamento do projeto da sua empresa, parcerias ou apenas conversar?</strong>
+          <Link href="#">
+            <a>Fale comigo!</a>
+          </Link>
+        </Container>
+      </ContactBox>
 
       <Testimonials>
         <h1>Feedback</h1>
