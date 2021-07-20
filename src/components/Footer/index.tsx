@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaHeart } from "react-icons/fa";
+import { FaHeart, FaFacebookF, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 import { Foot } from "./styles";
 
@@ -10,16 +10,20 @@ export function Footer() {
           <strong>Criado com <FaHeart /> por EddyPBR</strong>
         </div>
         <div>
-          <a href="#">
+          <a href="https://www.facebook.com/eddypbr/" rel="noopener noreferrer" target="_blank">
             <FaFacebookF />
           </a>
 
-          <a href="#">
+          <a href="https://www.instagram.com/eddy_pbr/" rel="noopener noreferrer" target="_blank">
             <FaInstagram />
           </a>
 
-          <a href="#">
+          <a href="https://www.linkedin.com/in/eddypbr/" rel="noopener noreferrer" target="_blank">
             <FaLinkedinIn />
+          </a>
+
+          <a href="https://github.com/eddypbr" rel="noopener noreferrer" target="_blank">
+            <FaGithub />
           </a>
         </div>
       </article>

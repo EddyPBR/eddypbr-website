@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa"
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa"
 
 import { Navbar } from "../components/Navbar";
 import { BlogAside } from "../components/BlogAside";
@@ -113,15 +113,21 @@ export default function Home() {
             <img src="./images/guy.svg" alt="Redes sociais" />
 
             <div>
-              <Link href="#">
-                <a><FaFacebookF /></a>
-              </Link>
-              <Link href="#">
-                <a><FaInstagram /></a>
-              </Link>
-              <Link href="#">
-                <a><FaLinkedinIn /></a>
-              </Link>
+              <a href="https://www.facebook.com/eddypbr/" rel="noopener noreferrer" target="_blank">
+                <FaFacebookF />
+              </a>
+
+              <a href="https://www.instagram.com/eddy_pbr/" rel="noopener noreferrer" target="_blank">
+                <FaInstagram />
+              </a>
+
+              <a href="https://www.linkedin.com/in/eddypbr/" rel="noopener noreferrer" target="_blank">
+                <FaLinkedinIn />
+              </a>
+
+              <a href="https://github.com/eddypbr" rel="noopener noreferrer" target="_blank">
+                <FaGithub />
+              </a>
             </div>
           </div>
         </Portfolio>
