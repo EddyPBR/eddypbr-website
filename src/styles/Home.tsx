@@ -10,6 +10,7 @@ const upToDown = (marginTop: number, diferential: number) => keyframes`
 `;
 
 export const Background = styled.div`
+  top: 0;
   width: 100%;
   height: 100vh;
   background-image: url("./images/header-bg.png");
@@ -18,6 +19,28 @@ export const Background = styled.div`
   background-size: cover;
   position: absolute;
   z-index: -1;
+`;
+
+export const Main = styled.main`
+  width: 90vw;
+  max-width: 117rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 7fr 4fr;
+  gap: 13rem;
+
+  > section {
+    > nav {
+      margin-top: 4.8rem;
+    }
+  }
+
+  > aside {
+    margin-top: 12rem;
+  }
 `;
 
 export const Container = styled.div`
@@ -32,7 +55,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Main = styled.main`
+export const MainArticle = styled.article`
   width: 100%;
   max-width: 37.2rem;
   margin-top: 12rem;
@@ -49,7 +72,7 @@ export const Main = styled.main`
 `;
 
 export const Services = styled.section`
-  margin-top: 14.8rem;
+  margin-top: 8.8rem;
   display: flex;
   align-items: flex-start;
   gap: 3.0rem;

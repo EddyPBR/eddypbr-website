@@ -9,7 +9,7 @@ import { SkillCard } from "../components/SkillCard";
 import { TestimonialCard } from "../components/TestimonialCard";
 import { Footer } from "../components/Footer";
 
-import { Background, Container, Main, Services, Skills, Portfolio, ContactBox, Testimonials } from "../styles/Home";
+import { Background, Main, Container, MainArticle, Services, Skills, Portfolio, ContactBox, Testimonials } from "../styles/Home";
 
 export default function Home() {
   const blogs = [
@@ -41,36 +41,38 @@ export default function Home() {
         <title>Início | EddyPBR</title>
       </Head>
 
-      <Background />
-
-      <Container>
-        <Main>
-          <h1>
-            <span>Olá, me chamo</span>
-            Edvaldo Junior
-          </h1>
-          <p>
-            Desenvolvedor fullstack contruindo sistemas com servidores, websites e aplicativos mobile todos integrando um único sistema
-          </p>
-        </Main>
-
-        <Navbar />
-
-        <Services>
-          <div />
-          <article>
-            <h1>Meus serviços</h1>
+      <Main>
+        <section>
+          <MainArticle>
+            <h1>
+              <span>Olá, me chamo</span>
+              Edvaldo Junior
+            </h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices 
-              dui nec mi vehicula rhoncus ut a risus. Sed placerat tellus ut mi rhoncus, 
-              sit amet consectetur enim egestas. Nulla mi diam, posuere non tincidunt id, 
-              accumsan sed metus. Nullam feugiat eros at odio pretium dictum.
+              Desenvolvedor fullstack contruindo sistemas com servidores, websites e aplicativos mobile todos integrando um único sistema
             </p>
-          </article>
-        </Services>
+          </MainArticle>
+
+          <Navbar />
+
+          <Services>
+            <div />
+            <article>
+              <h1>Meus serviços</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices 
+                dui nec mi vehicula rhoncus ut a risus. Sed placerat tellus ut mi rhoncus, 
+                sit amet consectetur enim egestas. Nulla mi diam, posuere non tincidunt id, 
+                accumsan sed metus. Nullam feugiat eros at odio pretium dictum.
+              </p>
+            </article>
+          </Services>
+        </section>
 
         <BlogAside blogs={blogs} />
-      </Container>
+      </Main>
+
+      <Background />
 
       <Skills>
         <Container>
