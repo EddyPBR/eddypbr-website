@@ -5,7 +5,7 @@ export const Foot = styled.footer`
   height: 100%;
   min-height: 8rem;
   box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.16);
-  background-color: #0B0F14;
+  background-color: ${props => props.theme.colors.black};
 
   display: flex;
   flex-direction: column;
