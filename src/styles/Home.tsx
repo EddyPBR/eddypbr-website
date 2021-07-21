@@ -140,6 +140,14 @@ export const Portfolio = styled.section`
   display: flex;
   justify-content: space-between;
 
+  @media(max-width: 920px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18rem;
+    margin-top: 8rem;
+  }
+
   > article {
     max-width: 37rem;
 
@@ -180,11 +188,20 @@ export const Portfolio = styled.section`
 
     & > img {
       width: 100%;
-      max-width: 23.3rem; 
+      max-width: 23.3rem;
+
+      @media(max-width: 540px) {
+        max-width: 18rem;
+      }
     }
 
     & > div {
+      width: 12.6rem;
       margin-top: -8rem;
+
+      @media(max-width: 540px) {
+        width: 7rem;
+      }
 
       a {
         width: 6.4rem;
@@ -194,6 +211,11 @@ export const Portfolio = styled.section`
         align-items: center;
         border: 2px solid ${props => props.theme.colors.primary};
         border-radius: 50%;
+
+        @media(max-width: 540px) {
+          width: 5.6rem !important;
+          height: 5.6rem !important;
+        }
 
         transition: border-color .2s;
 
@@ -218,23 +240,43 @@ export const Portfolio = styled.section`
       a:nth-child(1) {
         margin-left: -12.8rem;
         animation: ${upToDown(2, 4.8)} 4s ease-in-out infinite alternate;
+
+        @media(max-width: 540px) {
+          margin-left: -8.8rem;
+        }
       }
 
       a:nth-child(2) {
         margin-left: -9.6rem;
         margin-top: 14.8rem;
         animation: ${upToDown(14.8, 3.6)} 3.6s ease-in-out infinite alternate;
+
+        @media(max-width: 540px) {
+          margin-top: 12.6rem;
+          animation: ${upToDown(12.6, 3.6)} 3.6s ease-in-out infinite alternate;
+        }
       }
 
       a:nth-child(3) {
         margin-top: 5.8rem;
         animation: ${upToDown(5.8, 5.6)} 3.2s ease-in-out infinite alternate;
+        
+        @media(max-width: 540px) {
+          margin-top: 8rem;
+          animation: ${upToDown(8, 3.6)} 3.2s ease-in-out infinite alternate;
+        }
       }
 
       a:nth-child(4) {
         margin-left: 2rem;
         margin-top: 19rem;
         animation: ${upToDown(18.8, 4.8)} 3.4s ease-in-out infinite alternate;
+
+        @media(max-width: 540px) {
+          margin-left: -1rem;
+          margin-top: 17.6rem;
+          animation: ${upToDown(17.6, 3.6)} 3.4s ease-in-out infinite alternate;
+        }
       }
     }
   }

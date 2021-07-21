@@ -41,7 +41,7 @@ export default function Home() {
         <title>Início | EddyPBR</title>
       </Head>
 
-      {/* <Main>
+      <Main>
         <section>
           <MainArticle>
             <h1>
@@ -99,39 +99,37 @@ export default function Home() {
         </Container>
       </Skills>
 
-      <Container>
-        <Portfolio>
-          <article>
-            <h1>Meu portfólio</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices dui nec mi vehicula rhoncus ut a risus. Sed placerat tellus ut mi rhoncus, sit amet consectetur enim egestas. Nulla mi diam, posuere non tincidunt id, accumsan sed metus.</p>
-            <Link href="#">
-              <a>Ver portfólio</a>
-            </Link>
-          </article>
+      <Portfolio>
+        <article>
+          <h1>Meu portfólio</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices dui nec mi vehicula rhoncus ut a risus. Sed placerat tellus ut mi rhoncus, sit amet consectetur enim egestas. Nulla mi diam, posuere non tincidunt id, accumsan sed metus.</p>
+          <Link href="#">
+            <a>Ver portfólio</a>
+          </Link>
+        </article>
+
+        <div>
+          <img src="./images/guy.svg" alt="Redes sociais" />
 
           <div>
-            <img src="./images/guy.svg" alt="Redes sociais" />
+            <a href="https://www.facebook.com/eddypbr/" rel="noopener noreferrer" target="_blank">
+              <FaFacebookF />
+            </a>
 
-            <div>
-              <a href="https://www.facebook.com/eddypbr/" rel="noopener noreferrer" target="_blank">
-                <FaFacebookF />
-              </a>
+            <a href="https://www.instagram.com/eddy_pbr/" rel="noopener noreferrer" target="_blank">
+              <FaInstagram />
+            </a>
 
-              <a href="https://www.instagram.com/eddy_pbr/" rel="noopener noreferrer" target="_blank">
-                <FaInstagram />
-              </a>
+            <a href="https://www.linkedin.com/in/eddypbr/" rel="noopener noreferrer" target="_blank">
+              <FaLinkedinIn />
+            </a>
 
-              <a href="https://www.linkedin.com/in/eddypbr/" rel="noopener noreferrer" target="_blank">
-                <FaLinkedinIn />
-              </a>
-
-              <a href="https://github.com/eddypbr" rel="noopener noreferrer" target="_blank">
-                <FaGithub />
-              </a>
-            </div>
+            <a href="https://github.com/eddypbr" rel="noopener noreferrer" target="_blank">
+              <FaGithub />
+            </a>
           </div>
-        </Portfolio>
-      </Container> */}
+        </div>
+      </Portfolio>
     
       <ContactBox>
         <Container>
