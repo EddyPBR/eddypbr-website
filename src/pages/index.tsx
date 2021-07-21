@@ -41,7 +41,7 @@ export default function Home() {
         <title>Início | EddyPBR</title>
       </Head>
 
-      {/* <Main>
+      <Main>
         <section>
           <MainArticle>
             <h1>
@@ -72,7 +72,7 @@ export default function Home() {
         <BlogAside blogs={blogs} />
       </Main>
 
-      <Background /> */}
+      <Background />
 
       <Skills>
         <Container>

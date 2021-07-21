@@ -32,6 +32,16 @@ export const Main = styled.main`
   grid-template-columns: 7fr 4fr;
   gap: 13rem;
 
+  @media(max-width: 1170px) {
+    gap: 0rem;
+  }
+
+  @media(max-width: 880px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   > section {
     > nav {
       margin-top: 4.8rem;
@@ -86,12 +96,20 @@ export const Services = styled.section`
     border-radius: 999px;
     margin-top: 3rem;
     position: absolute;
+
+    @media(max-width: 1170px) {
+      display: none;
+    }
   }
 
   > article {
     width: 100%;
     max-width: 37rem;
     margin-left: 20rem;
+
+    @media(max-width: 1170px) {
+      margin-left: 0rem;
+    }
 
     > h1 {
       color: ${props => props.theme.colors.primary};
