@@ -142,7 +142,7 @@ export default function Home() {
         </Container>
       </ContactBox>
 
-      {/* <Testimonials id="feedback">
+      <Testimonials id="feedback">
         <h1>Feedback</h1>
         <p>Alguns depoimentos de colegas de trabalho e clientes que já participaram de projetos comigo ao longo da minha carreira como desenvolvedor.</p>
 
@@ -152,7 +152,7 @@ export default function Home() {
           <TestimonialCard  imageUrl="https://avatars.githubusercontent.com/u/48658479?v=4" author="Edvaldo Junior" occupation="Desenvolvedor web" comment="Aliquam scelerisque, enim in ullamcorper venenatis, nibh urna laoreet ex, et laoreet nisi turpis quis nunc. Fusce condimentum dui at ligula tincidunt semper." />
           <TestimonialCard  imageUrl="https://avatars.githubusercontent.com/u/48658479?v=4" author="Edvaldo Junior" occupation="Desenvolvedor web" comment="Aliquam scelerisque, enim in ullamcorper venenatis, nibh urna laoreet ex, et laoreet nisi turpis quis nunc. Fusce condimentum dui at ligula tincidunt semper." />
         </article>
-      </Testimonials> */}
+      </Testimonials>
 
       <Footer />
     </>

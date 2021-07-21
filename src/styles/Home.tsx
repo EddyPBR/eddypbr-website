@@ -295,8 +295,13 @@ export const ContactBox = styled.section`
 
 export const Testimonials = styled.section`
   min-height: 92rem;
-  width: 117rem;
+  width: 90vw;
+  max-width: 117rem;
   margin: 8rem auto 8rem auto;
+
+  @media(max-width: 1170px) {
+    min-height: 80rem;
+  }
 
   > h1, > p {
     text-align: center;
@@ -305,28 +310,100 @@ export const Testimonials = styled.section`
   & > article {
     margin-top: 12rem;
 
+    @media(max-width: 1170px) {
+      min-height: ${16.8 * 4}rem;
+    }
+
+    @media(max-width: 420px) {
+      min-height: ${24 * 4}rem;
+    }
+
+    @media(max-width: 420px) {
+      min-height: ${34 * 4}rem;
+    }
+
     & > figure:nth-child(1) {
       margin-top: -4rem;
       margin-left: 20rem;
       animation: ${upToDown(-4, 3)} 4.8s ease-in-out infinite alternate;
+
+      @media(max-width: 1170px) {
+        margin-left: calc(42% - 32rem);
+        animation: ${upToDown(2, 3)} 4.8s ease-in-out infinite alternate;
+      }
+
+      @media(max-width: 720px) {
+        margin-left: calc(44% - 24rem);
+        animation: ${upToDown(2, 3)} 4.8s ease-in-out infinite alternate;
+      }
+
+      @media(max-width: 540px) {
+        margin-left: calc(50% - 16rem);
+        animation: ${upToDown(2, 6)} 4.8s ease-in-out infinite alternate;
+      }
     }
 
     & > figure:nth-child(2) {
       margin-left: 68rem;
       margin-top: 16rem;
       animation: ${upToDown(16, 3)} 3.2s ease-in-out infinite alternate;
+
+      @media(max-width: 1170px) {
+        margin-left: 48%;
+        animation: ${upToDown(12, 3)} 3.2s ease-in-out infinite alternate;
+      }
+
+      @media(max-width: 720px) {
+        margin-left: 48%;
+        animation: ${upToDown(3, 6)} 5.4s ease-in-out infinite alternate;
+      }
+
+      @media(max-width: 540px) {
+        margin-left: 4rem;
+        animation: ${upToDown(36, 3)} 3.2s ease-in-out infinite alternate;
+      }
     }
 
     & > figure:nth-child(3) {
       margin-top: 32rem;
-      margin-left: 4rem;
+      margin-left: 3rem;
       animation: ${upToDown(32, 3)} 4s ease-in-out infinite alternate;
+
+      @media(max-width: 1170px) {
+        margin-left: calc(42% - 32rem);
+        animation: ${upToDown(26, 3)} 4s ease-in-out infinite alternate;
+      }
+
+      @media(max-width: 720px) {
+        margin-left: calc(44% - 24rem);
+        animation: ${upToDown(36, 3)} 5s ease-in-out infinite alternate;
+      }
+
+      @media(max-width: 540px) {
+        margin-left: 2rem;
+        animation: ${upToDown(72, 3)} 4s ease-in-out infinite alternate;
+      }
     }
 
     & > figure:nth-child(4) {
       margin-top: 46rem;
       margin-left: 52rem;
       animation: ${upToDown(46, 3)} 4.4s ease-in-out infinite alternate;
+
+      @media(max-width: 1170px) {
+        margin-left: 48%;
+        animation: ${upToDown(37, 3)} 4.4s ease-in-out infinite alternate;
+      }
+
+      @media(max-width: 720px) {
+        margin-left: 48%;
+        animation: ${upToDown(39, 6)} 5s ease-in-out infinite alternate;
+      }
+      
+      @media(max-width: 540px) {
+        margin-left: 4rem;
+        animation: ${upToDown(108, 3)} 4.4s ease-in-out infinite alternate;
+      }
     }
 
     & > figure {
