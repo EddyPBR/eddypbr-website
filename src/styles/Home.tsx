@@ -243,8 +243,9 @@ export const Portfolio = styled.section`
 export const ContactBox = styled.section`
   width: 100%;
   min-height: 14.6rem;
-  background-color: ${props => props.theme.colors.primaryDark};
+  background: linear-gradient(45deg, ${props => props.theme.colors.primaryDark}, ${props => props.theme.colors.primary});
   filter: drop-shadow(0px 0.8rem 1.6rem rgba(0, 0, 0, 0.25));
+  padding: 3.2rem 0rem;
 
   display: flex;
   align-items: center;
@@ -258,12 +259,17 @@ export const ContactBox = styled.section`
     font-size: 1.8rem;
     color: ${props => props.theme.colors.white};
     text-align: center;
+
+    @media(max-width: 920px) {
+      font-size: 1.6rem;
+    }
   }
 
   a {
     height: 4.6rem;
-    width: 14rem;
-    border: 0.1rem solid ${props => props.theme.colors.white};
+    max-width: 14rem;
+    width: 100%;
+    border: 0.2rem solid ${props => props.theme.colors.white};
     border-radius: 0.8rem;
     font: ${props => props.theme.fonts.bold};
     color: ${props => props.theme.colors.white};
@@ -272,6 +278,11 @@ export const ContactBox = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media(max-width: 920px) {
+      height: 4.4rem;
+      border-width: 0.1rem;
+    }
 
     &:hover {
       background-color: ${props => props.theme.colors.secondary};
