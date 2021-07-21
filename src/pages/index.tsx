@@ -103,7 +103,7 @@ export default function Home() {
         <article>
           <h1>Meu portfólio</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices dui nec mi vehicula rhoncus ut a risus. Sed placerat tellus ut mi rhoncus, sit amet consectetur enim egestas. Nulla mi diam, posuere non tincidunt id, accumsan sed metus.</p>
-          <Link href="#">
+          <Link href="/portfolio">
             <a>Ver portfólio</a>
           </Link>
         </article>
@@ -134,7 +134,7 @@ export default function Home() {
       <ContactBox>
         <Container>
           <strong>Gostaria de fazer o orçamento do projeto da sua empresa, parcerias ou apenas conversar?</strong>
-          <Link href="#">
+          <Link href="/contato">
             <a>Fale comigo!</a>
           </Link>
         </Container>
