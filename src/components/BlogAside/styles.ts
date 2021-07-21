@@ -46,9 +46,6 @@ export const Blogs = styled.aside`
   width: 100%;
   max-height: 72rem;
   height: 100%;
-  /* position: absolute; */
-  /* top: 12rem; */
-  /* margin-left: 87rem; */
 
   display: flex;
   flex-direction: column;
@@ -121,7 +118,7 @@ export const Controlls = styled.div`
   flex-direction:column;
   justify-content: space-between;
   align-items: right;
-  top: 11.8rem;
+  margin-top: -46.8rem;
 
   > button {
     width: 3.2rem;
