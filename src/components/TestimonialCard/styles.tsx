@@ -1,17 +1,26 @@
 import styled from "styled-components"
 
 export const Card = styled.figure`
-  width: 32rem;
-  height: 18rem;
+  max-width: 32rem;
+  width: 100%;
+  min-height: 18rem;
   background-color: #0D151E;
   box-shadow: 0.2rem 0.4rem 0.8rem rgba(0, 0, 0, 0.04);
   border-radius: 16px;
   padding: 2.2rem;
 
+  @media(max-width: 720px) {
+    max-width: 24rem;
+  }
+
   > div {
     display: flex;
     align-items: center;
     gap: 1.6rem;
+
+    @media(max-width: 720px) {
+      flex-direction: column;
+    }
 
     img {
       width: 5.6rem;
@@ -23,6 +32,12 @@ export const Card = styled.figure`
       display: flex;
       flex-direction: column;
       gap: .4rem;
+
+      @media(max-width: 720px) {
+        cite, span {
+          text-align: center;
+        }
+      }
 
       cite {
         font: ${props => props.theme.fonts.bold};
@@ -41,5 +56,9 @@ export const Card = styled.figure`
     font: ${props => props.theme.fonts.text};
     font-size: 1.4rem;
     line-height: 1.8rem;
+
+    @media(max-width: 720px) {
+      text-align: center;
+    }
   }
 `;
