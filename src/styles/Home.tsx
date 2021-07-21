@@ -106,7 +106,7 @@ export const Services = styled.section`
 
 export const Skills = styled.section`
   width: 100%;
-  height: 88.7rem;
+  min-height: 88.7rem;
   background-image: url("./images/skill-bg.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -115,19 +115,51 @@ export const Skills = styled.section`
   margin-top: 18.8rem;
   padding: 10rem 0px;
 
+  @media(max-width: 720px) {
+    margin-top: 8rem;
+  }
+
   > div {
     gap: 6rem;
 
     > article:nth-child(1) {
       margin-left: 0rem;
+
+      @media(max-width: 460px) {
+        margin: 0 auto;
+      }
     }
 
     > article:nth-child(2) {
       margin-left: 10rem;
+
+      @media(max-width: 720px) {
+        margin-left: 4rem;
+      }
+
+      @media(max-width: 520px) {
+        margin-left: 2rem;
+      }
+
+      @media(max-width: 460px) {
+        margin: 0 auto;
+      }
     }
 
     > article:nth-child(3) {
       margin-left: 20rem;
+
+      @media(max-width: 720px) {
+        margin-left: 8rem;
+      }
+      
+      @media(max-width: 520px) {
+        margin-left: 4rem;
+      }
+
+      @media(max-width: 460px) {
+        margin: 0 auto;
+      }
     }
   }
 `;
