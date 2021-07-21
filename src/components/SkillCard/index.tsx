@@ -10,10 +10,10 @@ type SkillCardProps = {
 export function SkillCard({ title, text, color, imgUrl }: SkillCardProps) {
   return(
     <Card color={color}>
-      <header>
+      <div>
         <img src={imgUrl} alt={title} />
         <strong>{title}</strong>
-      </header>
+      </div>
       <p>{text}</p>
     </Card>
   );

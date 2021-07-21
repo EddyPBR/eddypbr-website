@@ -7,7 +7,7 @@ type SkillCardProps = {
 export const Card = styled.article<SkillCardProps>`
   width: 90vw;
   max-width: 37rem;
-  height: 19rem;
+  min-height: 19rem;
 
   background: ${props => props.theme.colors.black};
   box-shadow: 0 0 1.6rem ${props => props.color};
@@ -16,11 +16,20 @@ export const Card = styled.article<SkillCardProps>`
   
   padding: 2.4rem;
 
-  > header {
+  @media(max-width: 420px) {
+    max-width: 32rem;
+    padding: 3.2rem 2.4rem;
+  }
+
+  > div {
     display: flex;
     align-items: center;
-    height: 4.8rem;
+    min-height: 4.8rem;
     gap: 0.8rem;
+
+    @media(max-width: 420px) {
+      flex-direction: column;
+    }
 
     img { 
       width: 100%;
