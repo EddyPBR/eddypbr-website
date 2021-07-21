@@ -5,19 +5,19 @@ import { Nav } from "./styles";
 export function Navbar() {
   return(
     <Nav>
-      <Link href="#">
+      <Link href="/">
         <a>
           Home
         </a>
       </Link>
 
-      <Link href="#">
+      <Link href="/blog">
         <a>
           Blog
         </a>
       </Link>
 
-      <Link href="#">
+      <Link href="/portfolio">
         <a>
           Portfólio
         </a>
@@ -29,7 +29,7 @@ export function Navbar() {
         </a>
       </Link>
 
-      <Link href="#">
+      <Link href="/contato">
         <a>
           Contato
         </a>
