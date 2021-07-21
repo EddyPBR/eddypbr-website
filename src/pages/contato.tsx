@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useState, FormEvent } from "react";
 
-import { Contact, Form } from "../styles/Contato";
+import { Contact, Form, Blobs } from "../styles/Contato";
 
 export default function Contato() {
   const [name, setName] = useState("");
@@ -44,6 +44,11 @@ export default function Contato() {
           <img src="./images/email.svg" alt="Fale com EddyPBR enviando um email" />
         </div>
       </Contact>
+
+      <Blobs>
+        <img src="./images/blob-contact-top.svg" alt="Fale com EddyPBR enviando um email" />
+        <img src="./images/blob-contact-bottom.svg" alt="Fale com EddyPBR enviando um email" />
+      </Blobs>
     </>
   )
 }

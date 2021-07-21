@@ -10,7 +10,7 @@ export const Contact = styled.main`
   justify-content: space-between;
   align-items: center;
 
-  @media(max-width: 960px) {
+  @media(max-width: 920px) {
     justify-content: center;
     flex-wrap: wrap-reverse;
     gap: 6.4rem;
@@ -22,7 +22,7 @@ export const Contact = styled.main`
     max-width: 446rem;
     margin: 4rem 0;
 
-    @media(max-width: 960px) {
+    @media(max-width: 920px) {
       margin: 0;
     }
 
@@ -34,13 +34,17 @@ export const Contact = styled.main`
       text-align: center;
       margin-bottom: 1.6rem;
       color: ${props => props.theme.colors.primary};
+
+      @media(max-width: 920px) {
+        color: ${props => props.theme.colors.headingLight};
+      }
     }
   }
 `;
 
 export const Form = styled.form`
   width: 100%;
-  max-width: 33.2rem;
+  max-width: 33.6rem;
   
   background-color: #0D151E;
 
@@ -79,18 +83,20 @@ export const Form = styled.form`
   > button {
     margin-top: calc(3.2rem - 2.4rem);
     width: 100%;
-    max-width: 18rem;
-    height: 4.4rem;
+    max-width: 16rem;
+    height: 4.6rem;
     border-radius: 0.6rem;
 
     font: ${props => props.theme.fonts.text};
-    background-color: ${props => props.theme.colors.primaryDark};
+    background: linear-gradient(135deg, ${props => props.theme.colors.primary}, ${props => props.theme.colors.secondary});
     color: ${props => props.theme.colors.white};
     cursor: pointer;
 
     transition: filter .2s;
     outline: 0;
     border: 0;
+    font-weight: bold;
+    filter: brightness(0.88);
 
     display: flex;
     justify-content: center;
@@ -98,7 +104,40 @@ export const Form = styled.form`
     align-self: center;
 
     &:hover {
-      filter: brightness(0.92);
+      filter: brightness(1);
+    }
+  }
+`;
+
+export const Blobs = styled.div`
+  overflow: hidden;
+  max-width: 100%;
+
+  > img {
+    position: fixed;
+    z-index: -1;
+    width: 40%;
+
+    @media(max-width: 1280px) {
+      width: 56%;
+    }
+
+    @media(max-width: 720px) {
+      width: 72%;
+    }
+
+    @media(max-width: 420px) {
+      width: 100%;
+    }
+
+    &:first-child {
+      top: 0;
+      left: 0;
+    }
+
+    &:last-child {
+      bottom: 0;
+      right: 0;
     }
   }
 `;
