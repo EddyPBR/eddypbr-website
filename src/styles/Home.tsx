@@ -299,10 +299,6 @@ export const Testimonials = styled.section`
   max-width: 117rem;
   margin: 8rem auto 8rem auto;
 
-  @media(max-width: 1170px) {
-    min-height: 80rem;
-  }
-
   > h1, > p {
     text-align: center;
   }
@@ -311,15 +307,12 @@ export const Testimonials = styled.section`
     margin-top: 12rem;
 
     @media(max-width: 1170px) {
+      margin-top: 8.8rem;
       min-height: ${16.8 * 4}rem;
     }
 
-    @media(max-width: 420px) {
-      min-height: ${24 * 4}rem;
-    }
-
-    @media(max-width: 420px) {
-      min-height: ${34 * 4}rem;
+    @media(max-width: 540px) {
+      min-height: ${34.2 * 4}rem;
     }
 
     & > figure:nth-child(1) {
@@ -359,7 +352,7 @@ export const Testimonials = styled.section`
       }
 
       @media(max-width: 540px) {
-        margin-left: 4rem;
+        margin-left: calc(58% - 16rem);
         animation: ${upToDown(36, 3)} 3.2s ease-in-out infinite alternate;
       }
     }
@@ -380,7 +373,7 @@ export const Testimonials = styled.section`
       }
 
       @media(max-width: 540px) {
-        margin-left: 2rem;
+        margin-left: calc(52% - 16rem);
         animation: ${upToDown(72, 3)} 4s ease-in-out infinite alternate;
       }
     }
@@ -401,7 +394,7 @@ export const Testimonials = styled.section`
       }
       
       @media(max-width: 540px) {
-        margin-left: 4rem;
+        margin-left: calc(56% - 16rem);
         animation: ${upToDown(108, 3)} 4.4s ease-in-out infinite alternate;
       }
     }
