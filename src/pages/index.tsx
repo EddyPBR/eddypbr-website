@@ -102,7 +102,12 @@ export default function Home() {
       <Portfolio>
         <article>
           <h1>Meu portfólio</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices dui nec mi vehicula rhoncus ut a risus. Sed placerat tellus ut mi rhoncus, sit amet consectetur enim egestas. Nulla mi diam, posuere non tincidunt id, accumsan sed metus.</p>
+          <p>
+            Conheça os projetos e sistemas que elaborei ao longo da minha 
+            carreira como programador, embora vários de meus projetos sejam 
+            privados e não possam ser mostrados, outros tem código aberto, 
+            espero que goste!
+          </p>
           <Link href="/portfolio">
             <a>Ver portfólio</a>
           </Link>

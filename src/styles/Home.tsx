@@ -202,7 +202,7 @@ export const Portfolio = styled.section`
     max-width: 37rem;
 
     h1 {
-      color: ${props => props.theme.colors.primaryLight};
+      color: ${props => props.theme.colors.primary};
     }
 
     a {
