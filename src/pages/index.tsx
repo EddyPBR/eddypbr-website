@@ -60,10 +60,10 @@ export default function Home() {
             <article>
               <h1>Meus serviços</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices 
-                dui nec mi vehicula rhoncus ut a risus. Sed placerat tellus ut mi rhoncus, 
-                sit amet consectetur enim egestas. Nulla mi diam, posuere non tincidunt id, 
-                accumsan sed metus. Nullam feugiat eros at odio pretium dictum.
+                Construção de sistemas completos definindo sua estrutura do 
+                servidor e tabelas no banco-de-dados, elaborando uma interface 
+                web para acesso do sistema e até mesmo um aplicativo mobile 
+                para que seus usuários tenham em mãos o acesso ao seu sistema.
               </p>
             </article>
           </Services>
