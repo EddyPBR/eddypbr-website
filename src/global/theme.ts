@@ -13,6 +13,8 @@ export const theme = {
     headingLight: "#C0C4C9",
 
     black: "#0B0F14",
+    black600: "#0D151E",
+    black700: "#141D27",
     white: "#FFF",
 
     background: "#090E14",
