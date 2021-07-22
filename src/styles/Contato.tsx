@@ -46,7 +46,7 @@ export const Form = styled.form`
   width: 100%;
   max-width: 33.6rem;
   
-  background-color: #0D151E;
+  background-color: ${props => props.theme.colors.black600};
 
   border-radius: 1.6rem;
   padding: 4.2rem 3.2rem;
@@ -62,7 +62,7 @@ export const Form = styled.form`
 
     padding: 1.4rem 0.8rem;
     color: ${props => props.theme.colors.heading};
-    background-color: #15202D;
+    background-color: ${props => props.theme.colors.black700};
     
     font: ${props => props.theme.fonts.text};
     font-size: 1.4rem;
