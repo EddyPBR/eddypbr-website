@@ -15,7 +15,7 @@ export function DropdownProject({ title, category, imageUrl, text, dropped }: Dr
   const [isDropped, setIsDropped] = useState(dropped);
 
   return(
-    <Project isDropped={isDropped}>
+    <Project isDropped={isDropped} onClick={() => setIsDropped(!isDropped)}>
       <header>
         <div>
           <img src={imageUrl} alt={`${title} - por EddyPBR`} />
@@ -24,7 +24,7 @@ export function DropdownProject({ title, category, imageUrl, text, dropped }: Dr
             <span>{category}</span>
           </div>
         </div>
-        <button type="button" onClick={() => setIsDropped(!isDropped)}>
+        <button type="button">
           <MdArrowDropDown />
         </button>
       </header>
