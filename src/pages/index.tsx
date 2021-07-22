@@ -78,21 +78,21 @@ export default function Home() {
         <Container>
           <SkillCard 
             title="NodeJS"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices dui nec mi vehicula rhoncus ut a risus."
+            text="Desenvolvimento de API’s com NodeJS + Typescript consumindo um banco de dados SQL ou NoSQL."
             imgUrl="./images/nodejs-eddypbr-skills.png"
             color="#539E43"
           />
 
           <SkillCard 
             title="NextJS"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices dui nec mi vehicula rhoncus ut a risus."
+            text="Desenvolvimento de websites e interfaces web utilizando o NextJS para otimizar o SEO do seu sistema."
             imgUrl="./images/nextjs-eddypbr-skills.png"
             color="#E44482"
           />
 
           <SkillCard 
-            title="React"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices dui nec mi vehicula rhoncus ut a risus."
+            title="React native"
+            text="Desenvolvimento de aplicativos mobile android e iOS para que seus clientes tenham seus sistemas em mãos."
             imgUrl="./images/react-eddypbr-skills.png"
             color="#4DBCDF"
           />
