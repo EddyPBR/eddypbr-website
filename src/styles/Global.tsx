@@ -5,6 +5,20 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track-piece {
+      background-color: ${props => props.theme.colors.background};
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border: 0.4rem solid ${props => props.theme.colors.primary};
+      background-clip: padding-box;
+      border-radius: 9999px;
+    }
   }
 
   html {
