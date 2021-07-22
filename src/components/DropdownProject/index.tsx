@@ -8,10 +8,11 @@ type DropdownProjectProps = {
   category: string;
   imageUrl: string;
   text: string;
+  dropped?: boolean;
 }
 
-export function DropdownProject({ title, category, imageUrl, text }: DropdownProjectProps) {
-  const [isDropped, setIsDropped] = useState(false);
+export function DropdownProject({ title, category, imageUrl, text, dropped }: DropdownProjectProps) {
+  const [isDropped, setIsDropped] = useState(dropped);
 
   return(
     <Project isDropped={isDropped}>
