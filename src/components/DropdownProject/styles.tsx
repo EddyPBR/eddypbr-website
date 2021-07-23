@@ -89,6 +89,8 @@ export const Project = styled.article<ProjectProps>`
       justify-content: center;
       align-items: center;
 
+      cursor: pointer;
+
       &:hover {
         color: ${props => props.theme.colors.primary};
       }
