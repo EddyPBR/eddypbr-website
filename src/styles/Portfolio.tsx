@@ -1,4 +1,19 @@
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
+
+type ActiveProjectProps = {
+  isAnimating?: boolean,
+}
+
+const fadeInRight = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`;
 
 export const Container = styled.div`
   width: 90vw;
@@ -11,6 +26,13 @@ export const Container = styled.div`
   justify-content: space-between;
 
   overflow-x: hidden;
+  gap: 3rem;
+
+  @media(max-width: 1170px) {
+    flex-direction: column;
+    padding: 3rem 0;
+    justify-content: center;
+  }
 `;
 
 export const ProjectsBox = styled.main`
@@ -38,13 +60,19 @@ export const ProjectsBox = styled.main`
   }
 `;
 
-export const ActiveProject = styled.a`
+export const ActiveProject = styled.a<ActiveProjectProps>`
   cursor: pointer;
   margin-right: 2.4rem;
+  animation: ${(props) => props.isAnimating ? css`${fadeInRight} forwards 1s`: ""};
+  
+  @media(max-width: 1170px) {
+    margin: 0;
+  }
 
   > img {
-    width: 61.2rem;
-    height: 43rem;
+    max-width: 61.2rem;
+    width: 100%;
+    height: auto;
     border-radius: 2.4rem;
     filter: drop-shadow(0 0.4rem 0.8rem rgba(108, 99, 255, 0.72));
   }
@@ -74,16 +102,45 @@ export const Blobs = styled.div`
     &:nth-child(1) {
       top: 0;
       left: 0;
+
+      @media(max-width: 1170px) {
+        width: 60%;
+      }
+
+      @media(max-height: 400px) {
+        width: 32%;
+      }
     }
 
     &:nth-child(2) {
-      bottom: 0;
+      top: 0;
       right: 0;
+      width: 32%;
+
+      @media(max-width: 1170px) {
+        top: 40%;
+        width: 48%;
+      }
+
+      @media(max-height: 400px) {
+        width: 24%;
+        top: 20%;
+      }
     }
 
     &:nth-child(3) {
       bottom: 0;
-      left: 0;
+      left: calc(40% - 60rem);
+
+      @media(max-width: 1170px) {
+        width: 60%;
+        left: 0;
+      }
+
+      @media(max-height: 400px) {
+        width: 30%;
+        left: calc(40% - 60rem * 0.3);
+      }
     }
   }
 `;
