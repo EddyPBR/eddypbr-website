@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { useState, FormEvent } from "react";
 
+import { BackToHomeLink } from "../components/BackToHomeLink";
+
 import { Contact, Form, Blobs } from "../styles/Contato";
 
 export default function Contato() {
@@ -49,6 +51,8 @@ export default function Contato() {
         <img src="./images/blob-contact-top.svg" alt="Fale com EddyPBR enviando um email" />
         <img src="./images/blob-contact-bottom.svg" alt="Fale com EddyPBR enviando um email" />
       </Blobs>
+
+      <BackToHomeLink />
     </>
   )
 }
