@@ -65,12 +65,13 @@ export default function Portfolio() {
 
   const [projects, setProjects] = useState<Project[]>([]);
   const [activeProject, setActiveProject] = useState<Project | undefined>();
+  const [animate, setAnimate] = useState(true);
 
   useEffect(() => {
     if(!fetchProjects) {
       return;
     }
-
+    
     const projects: Project[] = fetchProjects.map((project) => {
       const newProject = Object.assign({ isActive: false }, project);
       return newProject;
@@ -79,11 +80,24 @@ export default function Portfolio() {
     projects[0].isActive = true;
     setActiveProject(projects[0]);
 
+    setTimeout(() => { 
+      setAnimate(false);
+    }, 1000);
+
     setProjects(projects);
   }, []);
 
   function handleActiveProject(key: number) {
+    if(projects[key] === activeProject) {
+      return;
+    }
+
     setActiveProject(projects[key]);
+    setAnimate(true);
+
+    setTimeout(() => { 
+      setAnimate(false);
+    }, 1000);
 
     const newProjectsArray = projects.map((project, index) => {
       index === key ? project.isActive = true : project.isActive = false;
@@ -111,7 +125,7 @@ export default function Portfolio() {
         {
           activeProject && (
             <Link href={activeProject?.url || "/"}>
-              <ActiveProject>
+              <ActiveProject isAnimating={animate}>
                 <img src={activeProject?.thumbnail} alt={activeProject?.title} />
               </ActiveProject>
             </Link>
