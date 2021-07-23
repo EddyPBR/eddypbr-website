@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 import { DropdownProject } from "../components/DropdownProject";
+import { BackToHomeLink } from "../components/BackToHomeLink";
 
 import { Container, ProjectsBox, ActiveProject, Blobs } from "../styles/Portfolio";
 
@@ -71,7 +72,7 @@ export default function Portfolio() {
     if(!fetchProjects) {
       return;
     }
-    
+
     const projects: Project[] = fetchProjects.map((project) => {
       const newProject = Object.assign({ isActive: false }, project);
       return newProject;
@@ -138,6 +139,8 @@ export default function Portfolio() {
         <img src="./images/blob-portfolio-middle.svg" alt="Veja o portfólio de EddyPBR" />
         <img src="./images/blob-portfolio-bottom.svg" alt="Veja o portfólio de EddyPBR" />
       </Blobs>
+      
+      <BackToHomeLink />
     </>
   )
 }
