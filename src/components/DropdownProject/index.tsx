@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { MdArrowDropDown } from "react-icons/md";
 
 import { Project } from "./styles";
@@ -9,13 +9,18 @@ type DropdownProjectProps = {
   imageUrl: string;
   text: string;
   dropped?: boolean;
+  handleFunction?: () => void;
 }
 
-export function DropdownProject({ title, category, imageUrl, text, dropped }: DropdownProjectProps) {
-  const [isDropped, setIsDropped] = useState(dropped);
+export function DropdownProject({ title, category, imageUrl, text, dropped, handleFunction }: DropdownProjectProps) {
+  const [isDropped, setIsDropped] = useState(false);
+
+  useEffect(() => {
+    setIsDropped(dropped);
+  }, [dropped])
 
   return(
-    <Project isDropped={isDropped} onClick={() => setIsDropped(!isDropped)}>
+    <Project isDropped={isDropped} onClick={handleFunction ? handleFunction : () => setIsDropped(!isDropped)}>
       <header>
         <div>
           <img src={imageUrl} alt={`${title} - por EddyPBR`} />

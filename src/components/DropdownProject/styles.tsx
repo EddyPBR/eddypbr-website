@@ -29,6 +29,7 @@ export const Project = styled.article<ProjectProps>`
   flex-direction: column;
   gap: 1.6rem;
   overflow-y: hidden;
+  cursor: pointer;
 
   &:hover {
     border-color: ${props => props.theme.colors.primary};
