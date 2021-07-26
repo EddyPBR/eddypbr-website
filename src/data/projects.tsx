@@ -14,7 +14,7 @@ export const projects = [
     abstract: "Sistema de perguntas e respostas com ranqueamento de likes, excelente para responder perguntas em lives!",
     icon: "./projects/letmeask/letmeask-icon.jpg",
     thumbnail: "./projects/letmeask/letmeask-thumbnail.jpg",
-    url: "/projects/letmeask",
+    url: "/portfolio/letmeask",
   },
   {
     title: "Gameplay",
@@ -22,7 +22,7 @@ export const projects = [
     abstract: "Agende jogatinas com seus amigos com integração via discord app!",
     icon: "./projects/gameplay/gameplay-icon.jpg",
     thumbnail: "./projects/gameplay/gameplay-thumbnail.jpg",
-    url: "/projects/project",
+    url: "/portfolio/project",
   },
   {
     title: "Move-it",
@@ -30,7 +30,7 @@ export const projects = [
     abstract: "Técnica de pomodoro com desafios de relaxamento corporais e oculares em um sistema de leveling up!",
     icon: "./projects/moveit/moveit-icon.jpg",
     thumbnail: "./projects/moveit/moveit-thumbnail.jpg",
-    url: "/projects/move-it",
+    url: "/portfolio/move-it",
   },
   {
     title: "Mural digital",
@@ -38,7 +38,7 @@ export const projects = [
     abstract: "Um sistema para informar e alertar anúncios e notícias para os funcionários da empresa!",
     icon: "./projects/muraldigital/muraldigital-icon.jpg",
     thumbnail: "./projects/muraldigital/muraldigital-thumbnail.jpg",
-    url: "/projects/mural-digital"
+    url: "/portfolio/mural-digital"
   },
   {
     title: "Codebacker",
@@ -46,6 +46,6 @@ export const projects = [
     abstract: "Um aplicativo para controle do carregamento de produtos em veículos empresariais!",
     icon: "./projects/codebacker/codebacker-icon.jpg",
     thumbnail: "./projects/codebacker/codebacker-thumbnail.jpg",
-    url: "/projects/codebacker"
+    url: "/portfolio/codebacker"
   }
 ];
