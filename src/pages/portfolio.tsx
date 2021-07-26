@@ -61,7 +61,7 @@ export default function Portfolio({ projects: projectData }) {
         <ProjectsBox>
           <div>
             {
-              projects.map((project, index) => <DropdownProject key={index} title={project.title} text={project.abstract} category={project.category} imageUrl={project.icon} dropped={project.isActive} handleFunction={() => handleActiveProject(index)} />)
+              projects.map((project, index) => <DropdownProject key={index} title={project.title} text={project.abstract} categories={project.categories} imageUrl={project.icon} dropped={project.isActive} handleFunction={() => handleActiveProject(index)} />)
             }
           </div>
         </ProjectsBox>

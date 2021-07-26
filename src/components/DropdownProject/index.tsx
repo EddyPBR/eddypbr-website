@@ -5,15 +5,16 @@ import { Project } from "./styles";
 
 type DropdownProjectProps = {
   title: string;
-  category: string;
+  categories: string[];
   imageUrl: string;
   text: string;
   dropped?: boolean;
   handleFunction?: () => void;
 }
 
-export function DropdownProject({ title, category, imageUrl, text, dropped, handleFunction }: DropdownProjectProps) {
+export function DropdownProject({ title, categories, imageUrl, text, dropped, handleFunction }: DropdownProjectProps) {
   const [isDropped, setIsDropped] = useState(false);
+  const category = categories.join(" | ");
 
   useEffect(() => {
     setIsDropped(dropped);
