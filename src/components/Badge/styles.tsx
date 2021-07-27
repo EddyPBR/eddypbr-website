@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 type BadgeStyleProps = {
-  color: string;
+  type: string;
 }
 
 export const BadgeStyle = styled.span<BadgeStyleProps>`
-  background-color: ${props => props.color};
+  background-color: ${props => props.theme.colors[`${props.type}`]};
   color: ${props => props.theme.colors.white};
 
   font: ${props => props.theme.fonts.title};

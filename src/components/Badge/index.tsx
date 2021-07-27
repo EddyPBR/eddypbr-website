@@ -1,12 +1,11 @@
 import { BadgeStyle } from "./styles";
 
 type BadgeProps = {
-  title: string;
-  color: string;
+  type: string;
 }
 
-export function Badge({ title, color }: BadgeProps) {
+export function Badge({ type }: BadgeProps) {
   return (
-    <BadgeStyle color={color}>{title}</BadgeStyle>
+    <BadgeStyle type={type}>{type}</BadgeStyle>
   )
 };
