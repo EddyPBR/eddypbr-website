@@ -6,7 +6,7 @@ export type ProjectType = {
   thumbnail: string;
   url: string;
   team: string[];
-  otherLinks: ProjectOtherLinksType[];
+  otherLinks: ProjectOtherLinksType;
   content: ProjectContentType[];
 }
 
