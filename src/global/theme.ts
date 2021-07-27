@@ -8,6 +8,11 @@ export const theme = {
     secondary: "#E4216D",
     secondaryLight: "#E44482",
 
+    api: "#49D167",
+    web: "#63B4FF",
+    mobile: "#6C63FF",
+    pwa: "#D0165E",
+
     headingDark: "#7C8CA2",
     heading: "#AAB1BB",
     headingLight: "#C0C4C9",
