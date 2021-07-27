@@ -2,20 +2,26 @@ import { useState, useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
 
-import { projects as projectData, ProjectType } from "../data/projects";
+import { projects as projectData } from "../data/projects";
 
 import { DropdownProject } from "../components/DropdownProject";
 import { BackToHomeLink } from "../components/BackToHomeLink";
 
 import { Container, ProjectsBox, ActiveProject, Blobs } from "../styles/Portfolio";
 
-type Project = ProjectType & {
-  isActive: boolean;
+type ProjectType = {
+  title: string;
+  categories: string[];
+  abstract: string;
+  icon: string;
+  thumbnail: string;
+  url: string;
+  isActive: boolean,
 }
 
 export default function Portfolio({ projects: projectData }) {
-  const [projects, setProjects] = useState<Project[]>(projectData);
-  const [activeProject, setActiveProject] = useState<Project | undefined>();
+  const [projects, setProjects] = useState<ProjectType[]>(projectData);
+  const [activeProject, setActiveProject] = useState<ProjectType | undefined>();
   const [animate, setAnimate] = useState(true);
 
   useEffect(() => {
@@ -89,9 +95,17 @@ export default function Portfolio({ projects: projectData }) {
 }
 
 export function getStaticProps() {
-  const projects: Project[] = projectData.map((project) => {
-    const newProject = Object.assign({ isActive: false }, project);
-    return newProject;
+  const projects: ProjectType[] = projectData.map((project) => {
+    const newProjectData = {
+      title: project.title,
+      categories: project.categories,
+      abstract: project.abstract,
+      icon: project.icon,
+      thumbnail: project.thumbnail,
+      url: project.url,
+      isActive: false,
+    }
+    return newProjectData;
   });
 
   return {
@@ -99,4 +113,4 @@ export function getStaticProps() {
       projects,
     }
   }
-}
+};
