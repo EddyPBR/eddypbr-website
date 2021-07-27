@@ -36,7 +36,9 @@ export default function Letmeask({ project }: { project: ProjectType }) {
           <ProjectFooter>
             <div>
               <strong>Equipe:</strong>
-              <cite>&ndash; Edvaldo Junior (EddyPBR)</cite>
+              {
+                project.team.map((member) => <cite>&ndash; {member}</cite>)
+              }
             </div>
             <div>
               {
