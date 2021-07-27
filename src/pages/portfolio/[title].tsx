@@ -5,6 +5,7 @@ import { projects, ProjectType } from "../../data/projects";
 
 import { Badge } from "../../components/Badge";
 import { ExternalLink } from "../../components/ExternalLink";
+import { BackToHomeLink } from "../../components/BackToHomeLink";
 
 import { Container, ProjectHead, ProjectContent, ProjectBody, ProjectFooter } from "../../styles/Project";
 
@@ -50,6 +51,8 @@ export default function Letmeask({ project }: { project: ProjectType }) {
           </ProjectFooter>
         </ProjectContent>
       </Container>
+
+      <BackToHomeLink />
     </>
   );
 }
