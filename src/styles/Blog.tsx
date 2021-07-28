@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+type BlogGridProps = {
+  hideFirstElement?: boolean;
+}
+
 export const Container = styled.div`
   width: 90vw;
   max-width: 117rem;
@@ -70,7 +74,7 @@ export const Blogs = styled.main`
   }
 `;
 
-export const BlogGrid = styled.section`
+export const BlogGrid = styled.section<BlogGridProps>`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(29.6rem, 1fr));
@@ -86,7 +90,7 @@ export const BlogGrid = styled.section`
   }
 
   article:first-child {
-    display: none;
+    display: ${props => props.hideFirstElement ? "none" : "flex"};
     
     @media(max-width: 460px) {
       display: flex;

@@ -15,10 +15,18 @@ import { Container, SearchBar, Blogs, BlogGrid } from "../styles/Blog";
 
 export default function Blog({ blogs }: { blogs: BlogType[] }) {
   const [query, setQuery] = useState("");
+  const [filteredBlogs, SetFilteredBlogs] = useState<BlogType[] | undefined>();
 
   function handleFilter(event: FormEvent) {
     event.preventDefault();
-    // ...
+
+    if(!query) {
+      SetFilteredBlogs(undefined);
+      return;
+    }
+    
+    const blogsFiltered = blogs.filter((blog) => blog.title.toLocaleLowerCase().includes(query));
+    SetFilteredBlogs(blogsFiltered);
   }
 
   return (
@@ -38,27 +46,47 @@ export default function Blog({ blogs }: { blogs: BlogType[] }) {
         </form>
 
         <Blogs>
-          <HighlightBlogCard
-            thumbnail={blogs[0].thumbnail}
-            title={blogs[0].title}
-            authors={blogs[0].authors}
-            createdAt={blogs[0].createdAt}
-            abstract={blogs[0].abstract}
-            url={blogs[0].url} 
-          />
-          <BlogGrid>
+          {
+            !filteredBlogs && (
+              <HighlightBlogCard
+                thumbnail={blogs[0].thumbnail}
+                title={blogs[0].title}
+                authors={blogs[0].authors}
+                createdAt={blogs[0].createdAt}
+                abstract={blogs[0].abstract}
+                url={blogs[0].url} 
+              />
+            )
+          }
+          <BlogGrid hideFirstElement={!filteredBlogs}>
             {
-              blogs.map((blog, index) => 
-                <BlogGridCard
-                  key={index}
-                  thumbnail={blog.thumbnail}
-                  title={blog.title}
-                  authors={blog.authors}
-                  createdAt={blog.createdAt}
-                  abstract={blog.abstract}
-                  url={blog.url} 
-                />
-              )
+              !filteredBlogs
+                ? (
+                  blogs.map((blog, index) => 
+                    <BlogGridCard
+                      key={index}
+                      thumbnail={blog.thumbnail}
+                      title={blog.title}
+                      authors={blog.authors}
+                      createdAt={blog.createdAt}
+                      abstract={blog.abstract}
+                      url={blog.url} 
+                    />
+                  )
+                )
+                : (
+                  filteredBlogs.map((blog, index) => 
+                    <BlogGridCard
+                      key={index}
+                      thumbnail={blog.thumbnail}
+                      title={blog.title}
+                      authors={blog.authors}
+                      createdAt={blog.createdAt}
+                      abstract={blog.abstract}
+                      url={blog.url} 
+                    />
+                  )
+                )
             }
           </BlogGrid>
         </Blogs>
