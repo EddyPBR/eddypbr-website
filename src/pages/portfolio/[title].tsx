@@ -38,7 +38,7 @@ export default function Letmeask({ project }: { project: ProjectType }) {
             <div>
               <strong>Equipe:</strong>
               {
-                project.team.map((member) => <cite>&ndash; {member}</cite>)
+                project.team.map((member, index) => <cite key={index}>&ndash; {member}</cite>)
               }
             </div>
             <div>
