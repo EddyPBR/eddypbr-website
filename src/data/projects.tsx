@@ -122,7 +122,7 @@ export const projects = [
     ],
   },
   {
-    title: "Mural-digital",
+    title: "Mural digital",
     categories: ["api", "web", "mobile"],
     abstract: "Um sistema para informar e alertar anúncios e notícias para os funcionários da empresa!",
     icon: "/projects/muraldigital/muraldigital-icon.jpg",
