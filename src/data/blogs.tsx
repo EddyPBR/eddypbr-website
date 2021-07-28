@@ -25,11 +25,11 @@ export type BlogOtherLinksType = {
 
 export const blogs = [
   {
-    title: "Como desenvolvi este site com NextJS #1",
+    title: "Desenvolvimento de páginas estáticas com NextJS",
     tags: ["react", "typescript", "nextjs"],
     abstract: "Aqui irei falar sobre como desenvolvi este projeto, tecnologias utilizadas e como consegui inspiração para o design.",
     thumbnail: "/blogs/desenvolvimento-de-paginas-estaticas-com-nextjs/thumbnail.jpg",
-    url: "/blog/desenvolvimento-de-paginas-estaticas-com-nextjs-#1",
+    url: "/blog/desenvolvimento-de-paginas-estaticas-com-nextjs",
     authors: ["Edvaldo Junior (EddyPBR)"],
     createdAt: "28 de Julho, 2021",
     otherLinks: {
@@ -51,11 +51,11 @@ export const blogs = [
     ],
   },
   {
-    title: "Como desenvolvi este site com NextJS #2",
+    title: "Configurando typescript para projetos com NextJS",
     tags: ["react", "typescript", "nextjs"],
     abstract: "Aqui irei falar sobre como desenvolvi este projeto, tecnologias utilizadas e como consegui inspiração para o design.",
     thumbnail: "/blogs/desenvolvimento-de-paginas-estaticas-com-nextjs/thumbnail.jpg",
-    url: "/blog/desenvolvimento-de-paginas-estaticas-com-nextjs-#2",
+    url: "/blog/configurando-typescript-para-projetos-com-nextjs",
     authors: ["Edvaldo Junior (EddyPBR)"],
     createdAt: "28 de Julho, 2021",
     otherLinks: {
@@ -77,11 +77,11 @@ export const blogs = [
     ],
   },
   {
-    title: "Como desenvolvi este site com NextJS #3",
+    title: "Gerando páginas estáticas com NextJS",
     tags: ["react", "typescript", "nextjs"],
     abstract: "Aqui irei falar sobre como desenvolvi este projeto, tecnologias utilizadas e como consegui inspiração para o design.",
     thumbnail: "/blogs/desenvolvimento-de-paginas-estaticas-com-nextjs/thumbnail.jpg",
-    url: "/blog/desenvolvimento-de-paginas-estaticas-com-nextjs-#3",
+    url: "/blog/gerando-paginas-estaticas-com-nextjs",
     authors: ["Edvaldo Junior (EddyPBR)"],
     createdAt: "28 de Julho, 2021",
     otherLinks: {
