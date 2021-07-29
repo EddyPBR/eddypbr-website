@@ -3,11 +3,15 @@ import { TiArrowBack } from "react-icons/ti";
 
 import { Button } from "./styles";
 
-export function BackButton() {
+type BackButtonProps = {
+  url?: string;
+}
+
+export function BackButton({ url }: BackButtonProps) {
   const router = useRouter();
 
   function handleNavigateBack() {
-    router.back();
+    url ? router.push(url) : router.back();
   }
 
   return(
