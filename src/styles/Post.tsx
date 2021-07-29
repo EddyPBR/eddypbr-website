@@ -98,6 +98,23 @@ export const ContentBody = styled.div`
   flex-direction: column;
   margin-top: 3.2rem;
 
+  ul {
+    margin-top: 1.6rem;
+
+    li {
+    list-style: none;
+    margin: .4rem 0;
+
+    > a {
+      color: ${props => props.theme.colors.primary};
+      font: ${props => props.theme.fonts.subtitle};
+      font-size: 1.6rem;
+    }
+  }
+  }
+
+  
+
   > h2 {
     font-size: 2.8rem;
     margin-top: 3.2rem;
@@ -108,7 +125,7 @@ export const ContentBody = styled.div`
     }
   }
 
-  > p {
+  > p, b {
     font-size: 1.8rem;
     margin-top: 3.2rem;
     line-height: 3.2rem;
