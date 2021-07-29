@@ -21,6 +21,8 @@ export const theme = {
     html: "#eb6224",
     css: "#359fd8",
     nextjs: "#333333",
+    linkedin: "#006394",
+    trabalho: "#e3052f",
 
     headingDark: "#7C8CA2",
     heading: "#AAB1BB",
