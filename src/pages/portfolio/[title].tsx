@@ -59,7 +59,7 @@ export default function Letmeask({ project }: { project: ProjectType }) {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const project = projects.find((project) => { 
-    const titleToUrl = project.title.toLocaleLowerCase().split(" ").join("-").normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    const titleToUrl = project.title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f:,?-]/g, '').split(" ").join("-");
     
     if(titleToUrl === params.title) {
       return titleToUrl;
@@ -77,7 +77,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const paths = projects.map((project) => {
     return {
       params: {
-        title: project.title.toLowerCase().split(" ").join("-"),
+        title: project.title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f:,?-]/g, '').split(" ").join("-"),
       }
     };
   });
