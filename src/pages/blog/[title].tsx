@@ -57,7 +57,7 @@ export default function Letmeask({ blog }: { blog: BlogType }) {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const blog = blogs.find((blog) => { 
-    const titleToUrl = blog.title.toLocaleLowerCase().split(" ").join("-").normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    const titleToUrl = blog.title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f:,?-]/g, '').split(" ").join("-");
     
     if(titleToUrl === params.title) {
       return titleToUrl;
@@ -75,10 +75,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const paths = blogs.map((blog) => {
     return {
       params: {
-        title: blog.title.toLowerCase().split(" ").join("-"),
+        title: blog.title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f:,?-]/g, '').split(" ").join("-"),
       }
     };
   });
+
+  console.log(paths)
 
   return {
     paths,
