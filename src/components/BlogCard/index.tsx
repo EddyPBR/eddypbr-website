@@ -4,14 +4,14 @@ import { Card } from "./styles";
 
 export type BlogCardProps = {
   title: string;
+  thumbnail: string;
   url: string;
-  imgUrl: string;
 }
 
-export function BlogCard({ title, url, imgUrl }: BlogCardProps) {
+export function BlogCard({ title, thumbnail, url }: BlogCardProps) {
   return(
     <Card>
-      <img src={imgUrl} alt="test" />
+      <img src={thumbnail} alt="test" />
 
       <div>
         <strong>{title}</strong>

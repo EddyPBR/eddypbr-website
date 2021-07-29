@@ -59,7 +59,7 @@ export function BlogAside({ blogs }: BlogAsideProps ) {
       </Controlls>
       <Carousel animateNext={animateNext} animatePrev={animatePrev}>
         {
-          items.map(({ title, url, imgUrl }, index) => <BlogCard key={index} title={title} url={url} imgUrl={imgUrl} />)
+          items.map(({ title, thumbnail, url }, index) => <BlogCard key={index} title={title} url={url} thumbnail={thumbnail} />)
         }
       </Carousel>
     </Blogs>
