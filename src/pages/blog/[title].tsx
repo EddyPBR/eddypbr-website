@@ -3,11 +3,54 @@ import Head from "next/head";
 
 import { blogs, BlogType } from "../../data/blogs";
 
-export default function Letmeask({ blog }: { blog: BlogType }) {
-  console.log(blog);
+import { Badge } from "../../components/Badge";
+import { ExternalLink } from "../../components/ExternalLink";
+import { BackButton } from "../../components/BackButton";
 
+import { Container, PostHead, PostBody, ContentHead, ContentBody, ContentFooter } from "../../styles/Post";
+
+export default function Letmeask({ blog }: { blog: BlogType }) {
   return(
     <>
+      <Head>
+        <title>{blog.title} | EddyPBR</title>
+      </Head>
+
+      <Container>
+        <PostHead bgUrl={blog.thumbnail} />
+        <PostBody>
+          <article>
+            <ContentHead>
+              <h1>{blog.title}</h1>
+              <div>
+                {
+                  blog.tags.map((category, index) => <Badge key={index} type={category} />)
+                }
+              </div>
+            </ContentHead>
+
+            <ContentBody dangerouslySetInnerHTML={{ __html: blog.content }} />
+
+            <ContentFooter>
+              <div>
+                <strong>Autor:</strong>
+                {
+                  blog.authors.map((member, index) => <cite key={index}>&ndash; {member}</cite>)
+                }
+              </div>
+              <div>
+                {
+                  Object.keys(blog.otherLinks).map((atribute, index) =>
+                    <ExternalLink key={index} type={atribute} url={blog.otherLinks[atribute]} />
+                  )
+                }
+              </div>
+            </ContentFooter>
+          </article>
+        </PostBody>
+      </Container>
+
+      <BackButton />
     </>
   );
 }
