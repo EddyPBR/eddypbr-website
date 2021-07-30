@@ -27,7 +27,7 @@ export function BlogGridCard({ thumbnail, title, tags, authors, createdAt, abstr
         <h1>{title}</h1>
         <small>
           {
-            tags.map((tag) =>  <Badge type={tag} />)
+            tags.map((tag, index) =>  <Badge key={index} type={tag} />)
           }
         </small>
         <p>{abstract}</p>
