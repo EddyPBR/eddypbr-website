@@ -39,6 +39,13 @@ export const Card = styled.article`
       line-height: 5.6rem;
     }
 
+    small {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
     strong {
       font-size: 1.4rem;
     }

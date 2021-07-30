@@ -1,17 +1,20 @@
 import Link from "next/link";
 
+import { Badge } from "../Badge";
+
 import { Card } from "./styles";
 
 type HighlightBlogCardProps = {
   thumbnail: string;
   title: string;
+  tags: string[];
   authors: string[];
   createdAt: string;
   abstract: string;
   url: string;
 };
 
-export function HighlightBlogCard({ thumbnail, title, authors, createdAt, abstract, url }: HighlightBlogCardProps) {
+export function HighlightBlogCard({ thumbnail, title, tags, authors, createdAt, abstract, url }: HighlightBlogCardProps) {
   return (
     <Card>
       <Link href={url}>
@@ -22,6 +25,11 @@ export function HighlightBlogCard({ thumbnail, title, authors, createdAt, abstra
       <div>
         <span>{createdAt}</span>
         <h1>{title}</h1>
+        <small>
+          {
+            tags.map((tag, key) => <Badge key={key} type={tag} />)
+          }
+        </small>
         <p>{abstract}</p>
         <span>por: <strong>{authors}</strong></span>
       </div>
