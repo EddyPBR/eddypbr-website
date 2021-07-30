@@ -1,7 +1,6 @@
 import { useState, MouseEvent } from "react";
 
 import { FaFacebookF, FaTwitter, FaShareAlt } from "react-icons/fa";
-import { CgClose } from "react-icons/cg";
 import { FiCopy } from "react-icons/fi";
 
 import { Share, Button } from "./styles";
@@ -53,6 +52,9 @@ export function ShareButton({ facebook, twitter, copyUrl }: ShareButtonProps) {
     <>
       <Share showShareLinks={isActive} copied={copied}>
         <a href="#copy-to-clipboard" onClick={(event) => copyActualUrl(event)}>
+          {
+            copied && <span>Copiado!</span>
+          }
           <FiCopy />
         </a>
 
@@ -66,9 +68,7 @@ export function ShareButton({ facebook, twitter, copyUrl }: ShareButtonProps) {
       </Share>
 
       <Button onClick={() => setIsActive(!isActive)} isActive={isActive}>
-        {
-          isActive ? <CgClose /> : <FaShareAlt />
-        }
+        <FaShareAlt />
       </Button>
     </>
   )
