@@ -1,6 +1,5 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
-import Link from "next/link";
 
 import { useState, FormEvent } from "react";
 import { FaSearch } from "react-icons/fa";
@@ -9,9 +8,19 @@ import { HighlightBlogCard } from "../components/HighlightBlogCard";
 import { BlogGridCard } from "../components/BlogGridCard";
 import { BackToHomeLink } from "../components/BackToHomeLink";
 
-import { blogs, BlogType } from "../data/blogs";
+import { blogs } from "../data/blogs";
 
 import { Container, SearchBar, Blogs, BlogGrid } from "../styles/Blog";
+
+type BlogType = {
+  thumbnail: string;
+  title: string;
+  tags: string[];
+  authors: string[];
+  createdAt: string;
+  abstract: string;
+  url: string;
+};
 
 export default function Blog({ blogs }: { blogs: BlogType[] }) {
   const [query, setQuery] = useState("");
@@ -54,6 +63,7 @@ export default function Blog({ blogs }: { blogs: BlogType[] }) {
               <HighlightBlogCard
                 thumbnail={blogs[0].thumbnail}
                 title={blogs[0].title}
+                tags={blogs[0].tags}
                 authors={blogs[0].authors}
                 createdAt={blogs[0].createdAt}
                 abstract={blogs[0].abstract}
@@ -70,10 +80,11 @@ export default function Blog({ blogs }: { blogs: BlogType[] }) {
                       key={index}
                       thumbnail={blog.thumbnail}
                       title={blog.title}
+                      tags={blog.tags}
                       authors={blog.authors}
                       createdAt={blog.createdAt}
                       abstract={blog.abstract}
-                      url={blog.url} 
+                      url={blog.url}
                     />
                   )
                 )
@@ -83,6 +94,7 @@ export default function Blog({ blogs }: { blogs: BlogType[] }) {
                       key={index}
                       thumbnail={blog.thumbnail}
                       title={blog.title}
+                      tags={blog.tags}
                       authors={blog.authors}
                       createdAt={blog.createdAt}
                       abstract={blog.abstract}
@@ -101,9 +113,21 @@ export default function Blog({ blogs }: { blogs: BlogType[] }) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
+  const blogsWithFilteredAtributes = blogs.map((blog) => {
+    return({
+      thumbnail: blog.thumbnail,
+      title: blog.title,
+      tags: blog.tags,
+      authors: blog.authors,
+      createdAt: blog.createdAt,
+      abstract: blog.abstract,
+      url: blog.url,
+    });
+  });
+
   return {
     props: {
-      blogs,
+      blogs: blogsWithFilteredAtributes,
     },
   };
 };
