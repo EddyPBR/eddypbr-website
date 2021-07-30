@@ -24,8 +24,11 @@ export default function Blog({ blogs }: { blogs: BlogType[] }) {
       SetFilteredBlogs(undefined);
       return;
     }
+
+    const includesTitle = (title: string, query: string): boolean => title.toLowerCase().includes(query.toLowerCase());
+    const includesTags = (tags: string[], query: string): boolean => tags.includes(query.toLowerCase());
     
-    const blogsFiltered = blogs.filter((blog) => blog.title.toLocaleLowerCase().includes(query));
+    const blogsFiltered = blogs.filter((blog) => includesTitle(blog.title, query) || includesTags(blog.tags, query));
     SetFilteredBlogs(blogsFiltered);
   }
 
