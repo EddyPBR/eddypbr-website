@@ -2,6 +2,7 @@ import styled, { keyframes, css } from "styled-components";
 
 type ShareProps = {
   showShareLinks?: boolean;
+  copied?: boolean;
 }
 
 type ButtonProps = {
@@ -44,7 +45,6 @@ export const Share = styled.div<ShareProps>`
     font-size: 2.4rem;
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -53,8 +53,12 @@ export const Share = styled.div<ShareProps>`
     left: 1rem;
     z-index: 1000;
 
-    animation: ${(props) => css`${fadeOutLeft} .5s forwards`};
+    animation: ${() => css`${fadeOutLeft} .5s forwards`};
     animation: ${(props) => props.showShareLinks ? css`${fadeInLeft} .5s forwards` : ""};
+  }
+
+  > a:nth-child(1) {
+    color: ${props => props.copied ? props.theme.colors.nodejs : props.theme.colors.secondaryDark};
   }
 
   > a:nth-child(2) {
