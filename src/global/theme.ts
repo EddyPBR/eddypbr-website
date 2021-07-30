@@ -13,6 +13,7 @@ export const theme = {
     mobile: "#6C63FF",
     pwa: "#D0165E",
     mongo: "#4e9144",
+    nodejs: "#8cbf3d",
     react: "#63B4FF",
     docker: "##2391e7",
     reactNative: "#6C63FF",
