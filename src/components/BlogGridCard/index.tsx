@@ -1,17 +1,20 @@
 import Link from "next/link";
 
+import { Badge } from "../Badge";
+
 import { Card } from "./styles";
 
 type BlogGridCardProps = {
   thumbnail: string;
   title: string;
+  tags: string[];
   authors: string[];
   createdAt: string;
   abstract: string;
   url: string;
 };
 
-export function BlogGridCard({ thumbnail, title, authors, createdAt, abstract, url }: BlogGridCardProps) {
+export function BlogGridCard({ thumbnail, title, tags, authors, createdAt, abstract, url }: BlogGridCardProps) {
   return(
     <Card>
       <Link href={url}>
@@ -22,6 +25,11 @@ export function BlogGridCard({ thumbnail, title, authors, createdAt, abstract, u
       <div>
         <span>{createdAt}</span>
         <h1>{title}</h1>
+        <small>
+          {
+            tags.map((tag) =>  <Badge type={tag} />)
+          }
+        </small>
         <p>{abstract}</p>
         <span>por: <strong>{authors}</strong></span>
       </div>

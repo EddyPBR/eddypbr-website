@@ -35,6 +35,13 @@ export const Card = styled.article`
       line-height: 3.2rem;
     }
 
+    small {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
     p {
       font-size: 1.5rem;
       line-height: 2.2rem;
