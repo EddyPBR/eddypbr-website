@@ -166,4 +166,85 @@ export const blogs = [
       <p>Ótimo para conseguir ícones para seus botões e links, vale muito apena conferir, acesse o <a href="https://www.flaticon.com/br/" rel="noopener noreferrer" target="_blank">Flaticon</a> aqui e aproveite!</p>    
     `,
   },
+  {
+    title: "Gerando url de compartilhamento no facebook e twitter",
+    tags: ["web", "html"],
+    abstract: "Neste blog irei mostrar como criar o link de compartilhar sua página no facebook e twitter",
+    thumbnail: "/blogs/gerando-url-de-compartilhamento-no-facebook-e-twitter/thumbnail.jpg",
+    url: "/blog/gerando-url-de-compartilhamento-no-facebook-e-twitter",
+    authors: ["Edvaldo Junior (EddyPBR)"],
+    createdAt: "30 de Julho, 2021",
+    otherLinks: {
+      linkedin: "https://www.linkedin.com/in/eddypbr/",
+    },
+    content:`
+      <h2>Sumário</h2>
+
+      <ul>
+        <li><a href="#resumo">Resumo</a></li>
+        <li><a href="#links-de-compartilhamento">Links de compartilhamento</a></li>
+        <li><a href="#gerando-a-url-do-facebook">Gerando a url do Facebook</a></li>
+        <li><a href="#gerando-a-url-do-twitter">Gerando a url do Twitter</a></li>
+        <li><a href="#personalizando">Personalizando</a></li>
+        <li><a href="#personalizando-o-facebook">Personalizando o Facebook</a></li>
+        <li><a href="#personalizando-o-twitter">Personalizando o Twitter</a></li>
+        <li><a href="#por-hoje-e-so-pessoal">Por hoje é só pessoal</a></li>
+      </ul>
+
+      <h2 id="resumo">Resumo</h2>
+      <p>Neste blog irei mostrar como criar o link de compartilhar sua página no facebook e twitter.</p>
+      
+      <h2 id="links-de-compartilhamento">Links de compartilhamento</h2>
+      <p>Os links de compartilhamento são importantes em páginas para as quais os usuários gerais do nosso sistema possam partilhar de informações e dados, alguns dos exemplos de páginas que gostaríamos de compartilhar são: blogs, páginas de produto ou serviço de algum negócio, vídeos e etc.</p>
+      <p>Essa é uma tarefa simples, e estou aqui para mostrar e orientar a quem precisa inserir esse tipo de link em sua página! então vamos lá? :)</p>
+      
+      <h2 id="gerando-a-url-do-facebook">Gerando a url do Facebook</h2>
+      <p>Primeiro olhe a url base de compartilhamento do facebook: <b><i>https://www.facebook.com/sharer/sharer.php</i></b></p>
+      <p>Essa é a url base de compartilhar no facebook, agora basta adicionar o seguinte: <b><i>https://www.facebook.com/sharer/sharer.php?u=UrlDaSuaPagina</i></b></p>
+      <p>Exemplo: <b><i>https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/channel/UCBFpXDj9ZBcPf4Am7fdhhbw</i></b></p>
+      <p>Com isso a página web pode ser compartilhada no facebook, simples não é mesmo? - agora vamos ver o processo com o twitter.</p>
+      
+      <h2 id="gerando-a-url-do-twitter">Gerando a url do Twitter</h2>
+      <p>Primeiro olhe a url base de compartilhamento do twitter: <b><i>https://twitter.com/intent/tweet</i></b></p>
+      <p>Essa é a url base de compartilhar no twitter, agora basta adicionar o seguinte: <b><i>https://twitter.com/intent/tweet?url=UrlDaSuaPagina</i></b></p>
+      <p>Exemplo: <b><i>https://twitter.com/intent/tweet?url=https://www.youtube.com/channel/UCBFpXDj9ZBcPf4Am7fdhhbw</i></b></p>
+      <p>Com isso finalizamos as urls de compartilhamento das páginas, no tópico seguinte irei ensinar como personalizar (mostrar imagens, resumo da página em textos e etc) na hora do compartilhamento.</p>
+      
+      <h2 id="personalizando">Personalizando</h2>
+      <p>Com os passos anteriores completados, agora vamos inserir textos e imagens na hora do compartilhamento da página em questão, é um processo bem simples, basta configurar o cabeçalho da sua página web.</p>
+      <p>Dentro da sua página html no começo do arquivo existe uma tag chamada &lt;head&gt; que é delimitada por &lt;/head&gt; pois bem dentro dessa tag o que você vai fazer é copiar os seguintes trechos de código.</p>
+      
+      <h2 id="personalizando-o-facebook">Personalizando o Facebook</h2>
+      <p>Copie o código abaixo na no cabeçalho do seu html</p>
+
+      <p><b><i>&lt;meta property="og:url" content="https://www.youtube.com/channel/UCBFpXDj9ZBcPf4Am7fdhhbw" /&gt;</i></b></p>
+      <p><b><i>&lt;meta property="og:type" content="article" /&gt;</i></b></p>
+      <p><b><i>&lt;meta property="og:title" content="Canal do youtube de EddyPBR" /&gt;</i></b></p>
+      <p><b><i>&lt;meta property="og:description"  content="Vídeos sobre projetos de programação legais" /&gt;</i></b></p>
+      <p><b><i>&lt;meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqK6LN1t6ybpk_a6U_pXPKWy3n723m3t5jP7JMWWUDBW20M8TuzIoO6j6bVrdpmVfCJ_g&usqp=CAU" /&gt;</i></b></p>
+      
+      <h2>Explicando as tags:</h2>
+      <p><b><i>og:url</b> - A url do seu website;</i></b></p>
+      <p><b><i>og:type</b> - O tipo de conteúdo abordado, pode ser: website, blog, enterteinment, game, movie, food, company e etc;</i></b></p>
+      <p><b><i>og:title</b> - O título da sua página;</i></b></p>
+      <p><b><i>og:description</b> - A descrição da sua página;</i></b></p>
+      <p><b><i>og:image</b>: A URL da imagem de capa da sua página o facebook recomenda um tamanho de 1200x627 pixels;</i></b></p>
+      
+      <h2 id="personalizando-o-twitter">Personalizando o Twitter</h2>
+      <p>Copie o código abaixo na no cabeçalho do seu html</p>
+
+      <p><b><i>&lt;meta name="twitter:title" content=""&gt;</i></b></p>
+      <p><b><i>&lt;meta name="twitter:card" content="summary_large_image"&gt;</i></b></p>
+      <p><b><i>&lt;meta name="twitter:image" content="https://letmeask-virid.vercel.app/letmeask.jpg"&gt;</i></b></p>
+
+      <h2>Explicando as tags:</h2>
+      <p><b>twitter:title</b> - O título da sua página;</p>
+      <p><b>twitter:card</b> - O tamanho da imagem da card do twitter;</p>
+      <p><b>twitter:image</b> - A url da imagem de capa da card no twitter;</p>
+      
+      <h2 id="por-hoje-e-so-pessoal">Por hoje é só pessoal</h2>
+      <p>Bem esse foi um guia simplificado de como criar as urls de compartilhamento no facebook e twitter e com algumas personalizações, existem outras diversas meta-tags que são colocadas no &lt;head&gt; dos projetos, caso você esteja lendo isso do blog do EddyPBR, meu blog (risos), pode-se ver no código fonte que existem outras diversas meta-tags.</p>
+      <p>Espero que tenha gostado e lhe seja útil, sem mais. É isso, até a próxima!</p>  
+    `,
+  },
 ];
