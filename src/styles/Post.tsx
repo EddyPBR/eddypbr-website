@@ -129,6 +129,7 @@ export const ContentBody = styled.div`
     font-size: 1.8rem;
     margin-top: 3.2rem;
     line-height: 3.2rem;
+    word-wrap: break-word;
 
     @media(max-width: 1070px) {
       font-size: 1.6rem;
