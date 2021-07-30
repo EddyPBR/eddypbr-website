@@ -23,6 +23,7 @@ export const theme = {
     nextjs: "#333333",
     linkedin: "#006394",
     trabalho: "#e3052f",
+    design: "#ea4c1d",
 
     headingDark: "#7C8CA2",
     heading: "#AAB1BB",
