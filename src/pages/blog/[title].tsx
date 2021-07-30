@@ -6,10 +6,11 @@ import { blogs, BlogType } from "../../data/blogs";
 import { Badge } from "../../components/Badge";
 import { ExternalLink } from "../../components/ExternalLink";
 import { BackButton } from "../../components/BackButton";
+import { ShareButton } from "../../components/ShareButton";
 
 import { Container, PostHead, PostBody, ContentHead, ContentBody, ContentFooter } from "../../styles/Post";
 
-export default function Letmeask({ blog }: { blog: BlogType }) {
+export default function Letmeask({ blog }: { blog: BlogType }) {  
   return(
     <>
       <Head>
@@ -50,7 +51,9 @@ export default function Letmeask({ blog }: { blog: BlogType }) {
         </PostBody>
       </Container>
 
-      <BackButton />
+      <ShareButton facebook copyUrl twitter />
+
+      <BackButton url="../blog" />
     </>
   );
 }
@@ -79,8 +82,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
       }
     };
   });
-
-  console.log(paths)
 
   return {
     paths,
