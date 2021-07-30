@@ -26,7 +26,7 @@ export const blogs = [
     thumbnail: "/blogs/a-importancia-do-linkedin-como-ferramenta-profissional/thumbnail.jpg",
     url: "/blog/a-importancia-do-linkedin-como-ferramenta-profissional",
     authors: ["Edvaldo Junior (EddyPBR)"],
-    createdAt: "29 de Julho, 2021",
+    createdAt: "28 de Julho, 2021",
     otherLinks: {
       linkedin: "https://www.linkedin.com/in/eddypbr/",
     },
@@ -111,6 +111,59 @@ export const blogs = [
       <h2 id="entao-nextjs-ou-reactjs">Então NextJS ou ReactJS?</h2>
       <p>Então o NextJS é melhor que o React? - Não, e como dito o React tem problema de SEO, mas nem tudo precisa de SEO, alguns às vezes é melhor que não tenha mesmo. Por exemplo uma página administrativa de um sistema, ou um website de controle de pedidos de uma empresa que só roda em máquinas locais, basicamente tudo aquilo que não for necessário ser encontrado por sistemas de busca da web em sua maioria não precisa do NextJS.</p>
       <p>Por fim, é isso espero que tenha gostado! Caso queira se aprofundar aconselho a pesquisar mais sobre SPA, SSR e SSG</p>
+    `,
+  },
+  {
+    title: "Cinco plataformas de imagens gratuitas projetos",
+    tags: ["web", "design"],
+    abstract: "Se você  está procurando por imagens gratuitas para utilizar no seu projeto, leia este blog!",
+    thumbnail: "/blogs/cinco-plataformas-de-imagens-gratuitas-projetos/thumbnail.jpg",
+    url: "/blog/cinco-plataformas-de-imagens-gratuitas-projetos",
+    authors: ["Edvaldo Junior (EddyPBR)"],
+    createdAt: "30 de Julho, 2021",
+    otherLinks: {
+      linkedin: "https://www.linkedin.com/in/eddypbr/",
+    },
+    content: `
+      <h2>Sumário</h2>
+
+      <ul>
+        <li><a href="#resumo">Resumo</a></li>
+        <li><a href="#as-illustrations">As illustrações</a></li>
+        <li><a href="#undraw">unDraw</a></li>
+        <li><a href="#glaze-illustrations">Glaze Illustrations</a></li>
+        <li><a href="#smash-illustrations">Smash illustrations</a></li>
+        <li><a href="#freepik">Freepik</a></li>
+        <li><a href="#flaticon">Flaticon</a></li>
+      </ul>
+      
+      <h2 id="resumo">Resumo</h2>
+      <p>Se você está procurando por imagens gratuitas para utilizar no seu projeto, leia este blog!</p>
+      
+      <h2 id="as-illustrations">As ilustrações</h2>
+      <p>Ilustrações são importantes para todos os websites e aplicativos, como dizem uma imagem vale mais do que mil palavras, e  em alguns casos são capazes de transformar conteúdos tediosos em conteúdos animados e dinâmicos.</p>
+      <p>Então neste post irei falar das cinco plataformas em que consigo imagens gratuitas para os meus projetos</p>
+      
+      <h2 id="undraw">unDraw</h2>
+      <p>Retirado do próprio website do unDraw <i>“Navegue para encontrar as imagens que se encaixam em sua mensagem, personalize automaticamente a cor para combinar com sua marca e use-a como uma imagem normal, código incorporado ou diretamente em seu fluxo de trabalho de design”</i>.</p>
+      <p>Os svg’s do unDraw são ótimos para criar websites no estilo clean, <a href="https://undraw.co/illustrations" rel="noopener noreferrer" target="_blank">acesse o unDraw</a> e aproveite seus lindos svg’s!</p>
+      
+      <h2 id="glaze-illustrations">Glaze Illustrations</h2>
+      <p>Segundo o próprio website do Glaze illustrations <i>“Nossa licença permite que os usuários baixem as ilustrações gratuitamente, sempre atribuindo o ilustrador por seu trabalho e criando uma exposição valiosa“</i>.</p>
+      <p>Acesse a plataforma do <a href="https://www.glazestock.com/" rel="noopener noreferrer" target="_blank">Glaze illustrations</a> e aproveite!</p>
+      
+      <h2 id="smash-illustrations">Smash illustrations</h2>
+      <p>Aqui segundo a própria licença do website <i>“Você pode usar ativos gratuitos de acordo com licenças pessoais e comerciais.”</i> e <i>“Para quaisquer aplicativos da web ou programas de software, você não deve incluir nossos recursos gráficos como um anexo adicional. Isso será considerado uma redistribuição de nossos recursos, o que é proibido”</i>. Então cuidado ao criar emails ou PDF’s adicionais ein!</p>
+      <p>Acesse o <a href="https://usesmash.com/" rel="noopener noreferrer" target="_blank">Smash Illustrations</a> e aproveite!</p>
+      
+      <h2 id="freepik">Freepik</h2>
+      <p>Uma das mais famosas plataformas de imagens, ela possui um vasto banco de imagens para utilizarmos gratuitamente, outras não gratuitas, mas ainda assim é interessante conferir as imagens dessa plataforma.</p>
+      <p>O Freepik pede que se for utilizar imagens gratuitas seja feita uma menção no link, na imagem ou em algum texto do seu projeto.</p>
+      <p>Acesse o <a href="https://www.freepik.com/" rel="noopener noreferrer" target="_blank">Freepik</a> aqui e conheça e aproveite suas imagens!</p>
+      
+      <h2 id="flaticon">Flaticon</h2>
+      <p>Como mencionado no próprio website do Flaticon, <i>“Baixe gratuitamente figurinhas e ícones vetoriais para seus projetos. Recursos feitos por e para designers. Formatos PNG, SVG, EPS, PSD e BASE 64.”</i>.</p>
+      <p>Ótimo para conseguir ícones para seus botões e links, vale muito apena conferir, acesse o <a href="https://www.flaticon.com/br/" rel="noopener noreferrer" target="_blank">Flaticon</a> aqui e aproveite!</p>    
     `,
   },
 ];
