@@ -51,7 +51,6 @@ export function SEO({ title, description, url, urlImage, type, articleOgg }: SEO
       <meta name="twitter:site" content="@eddypbr" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <title>{title}</title>
     </>
   );
 }
