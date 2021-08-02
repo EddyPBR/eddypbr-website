@@ -7,6 +7,7 @@ import { projects, ProjectType } from "../../data/projects";
 import { SEO } from "../../components/SEO";
 import { Badge } from "../../components/Badge";
 import { ExternalLink } from "../../components/ExternalLink";
+import { ShareButton } from "../../components/ShareButton";
 import { BackButton } from "../../components/BackButton";
 
 import { Container, PostHead, PostBody, ContentHead, ContentBody, ContentFooter } from "../../styles/Post";
@@ -64,6 +65,8 @@ export default function Letmeask({ project }: { project: ProjectType }) {
           </article>
         </PostBody>
       </Container>
+
+      <ShareButton facebook copyUrl twitter />
 
       <BackButton />
     </>
