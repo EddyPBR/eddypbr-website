@@ -4,11 +4,13 @@ import Head from "next/head";
 import { useState, FormEvent } from "react";
 import { FaSearch } from "react-icons/fa";
 
+import { blogs } from "../data/blogs";
+import { parseISO, formatDistanceToNow } from "date-fns";
+import pt from "date-fns/locale/pt";
+
 import { HighlightBlogCard } from "../components/HighlightBlogCard";
 import { BlogGridCard } from "../components/BlogGridCard";
 import { BackToHomeLink } from "../components/BackToHomeLink";
-
-import { blogs } from "../data/blogs";
 
 import { Container, SearchBar, Blogs, BlogGrid } from "../styles/Blog";
 
@@ -65,7 +67,7 @@ export default function Blog({ blogs }: { blogs: BlogType[] }) {
                 title={blogs[0].title}
                 tags={blogs[0].tags}
                 authors={blogs[0].authors}
-                createdAt={blogs[0].createdAt}
+                createdAt={`há ${formatDistanceToNow( parseISO(blogs[0].createdAt), { locale: pt } )}`}
                 abstract={blogs[0].abstract}
                 url={blogs[0].url} 
               />
@@ -82,7 +84,7 @@ export default function Blog({ blogs }: { blogs: BlogType[] }) {
                       title={blog.title}
                       tags={blog.tags}
                       authors={blog.authors}
-                      createdAt={blog.createdAt}
+                      createdAt={`há ${formatDistanceToNow( parseISO(blog.createdAt), { locale: pt } )}`}
                       abstract={blog.abstract}
                       url={blog.url}
                     />
@@ -96,7 +98,7 @@ export default function Blog({ blogs }: { blogs: BlogType[] }) {
                       title={blog.title}
                       tags={blog.tags}
                       authors={blog.authors}
-                      createdAt={blog.createdAt}
+                      createdAt={`há ${formatDistanceToNow( parseISO(blog.createdAt), { locale: pt } )}`}
                       abstract={blog.abstract}
                       url={blog.url} 
                     />
