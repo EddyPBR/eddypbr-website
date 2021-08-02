@@ -256,7 +256,7 @@ export const blogs = [
       <pre>
         <code>&lt;meta name="twitter:title" content=""&gt;</code>
         <code>&lt;meta name="twitter:card" content="summary_large_image"&gt;</code>
-        <code>&lt;meta name="twitter:image" content="https://letmeask-virid.vercel.app/letmeask.jpg"&gt;</code>
+        <code>&lt;meta name="twitter:image" content=""&gt;</code>
       </pre>
 
       <h2>Explicando as tags:</h2>
