@@ -6,6 +6,7 @@ export type BlogType = {
   url: string;
   authors: string[];
   createdAt: string;
+  updatedAt: string;
   otherLinks: BlogOtherLinksType;
   content: string;
 }
@@ -26,7 +27,8 @@ export const blogs = [
     thumbnail: "/blogs/a-importancia-do-linkedin-como-ferramenta-profissional/thumbnail.jpg",
     url: "/blog/a-importancia-do-linkedin-como-ferramenta-profissional",
     authors: ["Edvaldo Junior (EddyPBR)"],
-    createdAt: "28 de Julho, 2021",
+    createdAt: "2021-07-28T11:00:00.000Z",
+    updatedAt: "2021-07-28T11:00:00.000Z",
     otherLinks: {
       linkedin: "https://www.linkedin.com/in/eddypbr/",
     },
@@ -66,7 +68,8 @@ export const blogs = [
     thumbnail: "/blogs/nextjs-vs-reactjs--qual-quando-e-porque-utilizar/thumbnail.jpg",
     url: "/blog/nextjs-vs-reactjs--qual-quando-e-porque-utilizar",
     authors: ["Edvaldo Junior (EddyPBR)"],
-    createdAt: "29 de Julho, 2021",
+    createdAt: "2021-07-29T11:00:00.000Z",
+    updatedAt: "2021-07-29T11:00:00.000Z",
     otherLinks: {
       linkedin: "https://www.linkedin.com/in/eddypbr/",
     },
@@ -120,7 +123,8 @@ export const blogs = [
     thumbnail: "/blogs/cinco-plataformas-de-imagens-gratuitas-projetos/thumbnail.jpg",
     url: "/blog/cinco-plataformas-de-imagens-gratuitas-projetos",
     authors: ["Edvaldo Junior (EddyPBR)"],
-    createdAt: "30 de Julho, 2021",
+    createdAt: "2021-07-30T11:00:00.000Z",
+    updatedAt: "2021-07-30T11:00:00.000Z",
     otherLinks: {
       linkedin: "https://www.linkedin.com/in/eddypbr/",
     },
@@ -173,7 +177,8 @@ export const blogs = [
     thumbnail: "/blogs/gerando-url-de-compartilhamento-no-facebook-e-twitter/thumbnail.jpg",
     url: "/blog/gerando-url-de-compartilhamento-no-facebook-e-twitter",
     authors: ["Edvaldo Junior (EddyPBR)"],
-    createdAt: "30 de Julho, 2021",
+    createdAt: "2021-07-30T17:00:00.000Z",
+    updatedAt: "2021-07-30T17:00:00.000Z",
     otherLinks: {
       linkedin: "https://www.linkedin.com/in/eddypbr/",
     },
