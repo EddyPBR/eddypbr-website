@@ -199,15 +199,33 @@ export const blogs = [
       <p>Essa é uma tarefa simples, e estou aqui para mostrar e orientar a quem precisa inserir esse tipo de link em sua página! então vamos lá? :)</p>
       
       <h2 id="gerando-a-url-do-facebook">Gerando a url do Facebook</h2>
-      <p>Primeiro olhe a url base de compartilhamento do facebook: <b><i>https://www.facebook.com/sharer/sharer.php</i></b></p>
-      <p>Essa é a url base de compartilhar no facebook, agora basta adicionar o seguinte: <b><i>https://www.facebook.com/sharer/sharer.php?u=UrlDaSuaPagina</i></b></p>
-      <p>Exemplo: <b><i>https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/channel/UCBFpXDj9ZBcPf4Am7fdhhbw</i></b></p>
+      <p>Primeiro olhe a url base de compartilhamento do facebook:</p>
+      <pre>
+        <code>https://www.facebook.com/sharer/sharer.php    </code>
+      </pre>
+      <p>Essa é a url base de compartilhar no facebook, agora basta adicionar o seguinte:</p>
+      <pre>
+        <code>https://www.facebook.com/sharer/sharer.php?u=UrlDaSuaPagina   </code>
+      </pre>
+      <p>Exemplo:</p>
+      <pre>
+        <code>https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/channel/UCBFpXDj9ZBcPf4Am7fdhhbw    </code>
+      </pre>
       <p>Com isso a página web pode ser compartilhada no facebook, simples não é mesmo? - agora vamos ver o processo com o twitter.</p>
-      
+
       <h2 id="gerando-a-url-do-twitter">Gerando a url do Twitter</h2>
-      <p>Primeiro olhe a url base de compartilhamento do twitter: <b><i>https://twitter.com/intent/tweet</i></b></p>
-      <p>Essa é a url base de compartilhar no twitter, agora basta adicionar o seguinte: <b><i>https://twitter.com/intent/tweet?url=UrlDaSuaPagina</i></b></p>
-      <p>Exemplo: <b><i>https://twitter.com/intent/tweet?url=https://www.youtube.com/channel/UCBFpXDj9ZBcPf4Am7fdhhbw</i></b></p>
+      <p>Primeiro olhe a url base de compartilhamento do twitter:</p>
+      <pre>
+        <code>https://twitter.com/intent/tweet    </code>
+      </pre>
+      <p>Essa é a url base de compartilhar no twitter, agora basta adicionar o seguinte:</p>
+      <pre>
+        <code>https://twitter.com/intent/tweet?url=UrlDaSuaPagina    </code>
+      </pre>
+      <p>Exemplo:</p>
+      <pre>
+        <code>https://twitter.com/intent/tweet?url=https://www.youtube.com/channel/UCBFpXDj9ZBcPf4Am7fdhhbw    </code>
+      </pre>
       <p>Com isso finalizamos as urls de compartilhamento das páginas, no tópico seguinte irei ensinar como personalizar (mostrar imagens, resumo da página em textos e etc) na hora do compartilhamento.</p>
       
       <h2 id="personalizando">Personalizando</h2>
@@ -216,26 +234,30 @@ export const blogs = [
       
       <h2 id="personalizando-o-facebook">Personalizando o Facebook</h2>
       <p>Copie o código abaixo na no cabeçalho do seu html</p>
-
-      <p><b><i>&lt;meta property="og:url" content="https://www.youtube.com/channel/UCBFpXDj9ZBcPf4Am7fdhhbw" /&gt;</i></b></p>
-      <p><b><i>&lt;meta property="og:type" content="article" /&gt;</i></b></p>
-      <p><b><i>&lt;meta property="og:title" content="Canal do youtube de EddyPBR" /&gt;</i></b></p>
-      <p><b><i>&lt;meta property="og:description"  content="Vídeos sobre projetos de programação legais" /&gt;</i></b></p>
-      <p><b><i>&lt;meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqK6LN1t6ybpk_a6U_pXPKWy3n723m3t5jP7JMWWUDBW20M8TuzIoO6j6bVrdpmVfCJ_g&usqp=CAU" /&gt;</i></b></p>
+      <pre>
+        <code>&lt;meta property="og:url" content="https://www.youtube.com/channel/UCBFpXDj9ZBcPf4Am7fdhhbw" /&gt;   </code>
+        <code>&lt;meta property="og:type" content="article" /&gt;   </code>
+        <code>&lt;meta property="og:title" content="Canal do youtube de EddyPBR" /&gt;   </code>
+        <code>&lt;meta property="og:description"  content="Vídeos sobre projetos de programação legais" /&gt;   </code>
+        <code>&lt;meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqK6LN1t6ybpk_a6U_pXPKWy3n723m3t5jP7JMWWUDBW20M8TuzIoO6j6bVrdpmVfCJ_g&usqp=CAU" /&gt;   </code>
+      </pre>
       
       <h2>Explicando as tags:</h2>
-      <p><b><i>og:url</b> - A url do seu website;</i></b></p>
-      <p><b><i>og:type</b> - O tipo de conteúdo abordado, pode ser: website, blog, enterteinment, game, movie, food, company e etc;</i></b></p>
-      <p><b><i>og:title</b> - O título da sua página;</i></b></p>
-      <p><b><i>og:description</b> - A descrição da sua página;</i></b></p>
-      <p><b><i>og:image</b>: A URL da imagem de capa da sua página o facebook recomenda um tamanho de 1200x627 pixels;</i></b></p>
+      <pre>
+        <code>og:url</b> - A url do seu website;    </code>
+        <code>og:type</b> - O tipo de conteúdo abordado, pode ser: website, blog, enterteinment, game, movie, food, company e etc;    </code>
+        <code>og:title</b> - O título da sua página;    </code>
+        <code>og:description</b> - A descrição da sua página;    </code>
+        <code>og:image</b>: A URL da imagem de capa da sua página o facebook recomenda um tamanho de 1200x627 pixels;    </code>
+      </pre>
       
       <h2 id="personalizando-o-twitter">Personalizando o Twitter</h2>
       <p>Copie o código abaixo na no cabeçalho do seu html</p>
-
-      <p><b><i>&lt;meta name="twitter:title" content=""&gt;</i></b></p>
-      <p><b><i>&lt;meta name="twitter:card" content="summary_large_image"&gt;</i></b></p>
-      <p><b><i>&lt;meta name="twitter:image" content="https://letmeask-virid.vercel.app/letmeask.jpg"&gt;</i></b></p>
+      <pre>
+        <code>&lt;meta name="twitter:title" content=""&gt;</code>
+        <code>&lt;meta name="twitter:card" content="summary_large_image"&gt;</code>
+        <code>&lt;meta name="twitter:image" content="https://letmeask-virid.vercel.app/letmeask.jpg"&gt;</code>
+      </pre>
 
       <h2>Explicando as tags:</h2>
       <p><b>twitter:title</b> - O título da sua página;</p>
