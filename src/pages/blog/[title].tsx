@@ -4,6 +4,7 @@ import Head from "next/head";
 import { sanitize } from "isomorphic-dompurify";
 import { blogs, BlogType } from "../../data/blogs";
 
+import { SEO } from "../../components/SEO";
 import { Badge } from "../../components/Badge";
 import { ExternalLink } from "../../components/ExternalLink";
 import { BackButton } from "../../components/BackButton";
@@ -16,10 +17,24 @@ export default function Letmeask({ blog }: { blog: BlogType }) {
     __html: sanitize(blog.content),
   }
 
+  const href = blog.title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f:,?-]/g, '').split(" ").join("-");
+
   return(
     <>
       <Head>
         <title>{blog.title} | EddyPBR</title>
+        <SEO 
+          title={`${blog.title || "EddyPBR - Blog"}`}
+          description={blog.abstract}
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/blog/${href}`}
+          urlImage={`${process.env.NEXT_PUBLIC_BASE_URL}${blog.thumbnail}`}
+          type="article"
+          articleOgg={{
+            publishedAt: blog.createdAt,
+            modifiedAt: blog.updatedAt,
+            tagContent: blog.tags
+          }}
+        />
       </Head>
 
       <Container>

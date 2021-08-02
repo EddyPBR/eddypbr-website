@@ -8,6 +8,7 @@ import { blogs } from "../data/blogs";
 import { parseISO, formatDistanceToNow } from "date-fns";
 import pt from "date-fns/locale/pt";
 
+import { SEO } from "../components/SEO";
 import { HighlightBlogCard } from "../components/HighlightBlogCard";
 import { BlogGridCard } from "../components/BlogGridCard";
 import { BackToHomeLink } from "../components/BackToHomeLink";
@@ -47,6 +48,13 @@ export default function Blog({ blogs }: { blogs: BlogType[] }) {
     <>
       <Head>
         <title>Blog | EddyPBR</title>
+        <SEO 
+          title="EddyPBR - Blog sobre programação e dicas para desenvolvedores!" 
+          description="Dicas para desenvolvedores - React - Next - Typescript - NodeJS - React Native - Expo - HTML - CSS - javascript - Mongodb - SQL - NoSQL - MySQL"
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/blog`}
+          urlImage={`${process.env.NEXT_PUBLIC_BASE_URL}/public/eddypbr-cover.jpg`}
+          type="website"
+        />
       </Head>
 
       <Container>

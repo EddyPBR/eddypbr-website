@@ -4,6 +4,7 @@ import Head from "next/head";
 import { sanitize } from "isomorphic-dompurify";
 import { projects, ProjectType } from "../../data/projects";
 
+import { SEO } from "../../components/SEO";
 import { Badge } from "../../components/Badge";
 import { ExternalLink } from "../../components/ExternalLink";
 import { BackButton } from "../../components/BackButton";
@@ -15,10 +16,19 @@ export default function Letmeask({ project }: { project: ProjectType }) {
     __html: sanitize(project.content),
   }
 
+  const href = project.title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f:,?-]/g, '').split(" ").join("-");
+
   return (
     <>
       <Head>
         <title>{project.title} | EddyPBR</title>
+        <SEO 
+          title={`EddyPBR - Projeto: ${project.title}`}
+          description={project.abstract}
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/portfolio/${href}`}
+          urlImage={`${process.env.NEXT_PUBLIC_BASE_URL}${project.thumbnail}`}
+          type="website"
+        />
       </Head>
 
       <Container>

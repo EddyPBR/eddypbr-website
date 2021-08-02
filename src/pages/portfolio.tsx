@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { projects as projectData } from "../data/projects";
 
+import { SEO } from "../components/SEO";
 import { DropdownProject } from "../components/DropdownProject";
 import { BackToHomeLink } from "../components/BackToHomeLink";
 
@@ -61,6 +62,13 @@ export default function Portfolio({ projects: projectData }) {
     <>
       <Head>
         <title>Portfólio | EddyPBR</title>
+        <SEO 
+          title="EddyPBR - Portfólio" 
+          description="Portfólio pessoal com projetos utilizando NodeJS - React - NextJS - React Native - Figma - MySQL - NoSQL e afins!"
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/blog`}
+          urlImage={`${process.env.NEXT_PUBLIC_BASE_URL}/public/eddypbr-cover.jpg`}
+          type="website"
+        />
       </Head>
 
       <Container>

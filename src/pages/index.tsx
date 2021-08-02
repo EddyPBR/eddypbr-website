@@ -6,6 +6,7 @@ import { blogs, BlogType } from "../data/blogs";
 
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa"
 
+import { SEO } from "../components/SEO";
 import { Navbar } from "../components/Navbar";
 import { BlogAside } from "../components/BlogAside";
 import { SkillCard } from "../components/SkillCard";
@@ -19,6 +20,13 @@ export default function Home({ blogs }: { blogs: BlogType[] }) {
     <>
       <Head>
         <title>Início | EddyPBR</title>
+        <SEO 
+          title="EddyPBR website" 
+          description="Desenvolvedor fullstack web e mobile - Trabalhando com Typescript, NodeJS, Next, React, React Native, Expo e mais!"
+          url={process.env.NEXT_PUBLIC_BASE_URL}
+          urlImage={`${process.env.NEXT_PUBLIC_BASE_URL}/public/eddypbr-cover.jpg`}
+          type="website"
+        />
       </Head>
 
       <Main>
@@ -29,7 +37,7 @@ export default function Home({ blogs }: { blogs: BlogType[] }) {
               Edvaldo Junior
             </h1>
             <p>
-              Desenvolvedor fullstack contruindo sistemas com servidores, websites e aplicativos mobile todos integrando um único sistema
+              Desenvolvedor fullstack contruindo sistemas com servidores, websites e aplicativos mobile todos formando um único sistema.
             </p>
           </MainArticle>
 
