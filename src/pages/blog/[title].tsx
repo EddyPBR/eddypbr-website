@@ -1,6 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 
+import { sanitize } from "isomorphic-dompurify";
 import { blogs, BlogType } from "../../data/blogs";
 
 import { Badge } from "../../components/Badge";
@@ -10,7 +11,11 @@ import { ShareButton } from "../../components/ShareButton";
 
 import { Container, PostHead, PostBody, ContentHead, ContentBody, ContentFooter } from "../../styles/Post";
 
-export default function Letmeask({ blog }: { blog: BlogType }) {  
+export default function Letmeask({ blog }: { blog: BlogType }) {
+  const sanitizedContent = { 
+    __html: sanitize(blog.content),
+  }
+
   return(
     <>
       <Head>
@@ -30,7 +35,7 @@ export default function Letmeask({ blog }: { blog: BlogType }) {
               </div>
             </ContentHead>
 
-            <ContentBody dangerouslySetInnerHTML={{ __html: blog.content }} />
+            <ContentBody dangerouslySetInnerHTML={sanitizedContent} />
 
             <ContentFooter>
               <div>
