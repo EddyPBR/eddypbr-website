@@ -79,9 +79,10 @@ export const PostBody = styled.section`
 export const ContentHead = styled.div`
   h1 {
     margin-bottom: 0.8rem;
+    word-wrap: break-word;
 
     @media(max-width: 1070px) {
-      font-size: 4rem;
+      font-size: 3.2rem;
     }
   }
 
