@@ -7,7 +7,8 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 
     &::-webkit-scrollbar {
-      width: 4px;
+      width: 0.4rem;
+      height: 0.4rem;
     }
 
     &::-webkit-scrollbar-track-piece {
@@ -15,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     &::-webkit-scrollbar-thumb {
-      border: 0.4rem solid ${props => props.theme.colors.primary};
+      border: 0.2rem solid ${props => props.theme.colors.primary};
       background-clip: padding-box;
       border-radius: 9999px;
     }
