@@ -105,15 +105,13 @@ export const ContentBody = styled.div`
     list-style: none;
     margin: .4rem 0;
 
-    > a {
-      color: ${props => props.theme.colors.primary};
-      font: ${props => props.theme.fonts.subtitle};
-      font-size: 1.6rem;
+      > a {
+        color: ${props => props.theme.colors.primary};
+        font: ${props => props.theme.fonts.subtitle};
+        font-size: 1.6rem;
+      }
     }
   }
-  }
-
-  
 
   > h2 {
     font-size: 2.8rem;
@@ -133,6 +131,21 @@ export const ContentBody = styled.div`
 
     @media(max-width: 1070px) {
       font-size: 1.6rem;
+    }
+  }
+
+  > pre {
+    display: flex;
+    flex-direction: column;
+    background-color: ${props => props.theme.colors.black};
+    margin: 1.6rem 0 0 0;
+    padding: 3.2rem;
+    overflow-x: scroll;
+
+    > code {
+      color: ${props => props.theme.colors.primaryLight};
+      font-size: 1.4rem;
+      line-height: 2.4rem;
     }
   }
 `;
