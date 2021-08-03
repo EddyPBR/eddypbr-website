@@ -299,33 +299,27 @@ export const Portfolio = styled.section`
 
       a:nth-child(2) {
         margin-left: -9.6rem;
-        margin-top: 14.8rem;
         animation: ${upToDown(14.8, 3.6)} 3.6s ease-in-out infinite alternate;
 
         @media(max-width: 540px) {
-          margin-top: 12.6rem;
           animation: ${upToDown(12.6, 3.6)} 3.6s ease-in-out infinite alternate;
         }
       }
 
       a:nth-child(3) {
-        margin-top: 5.8rem;
         animation: ${upToDown(5.8, 5.6)} 3.2s ease-in-out infinite alternate;
         
         @media(max-width: 540px) {
-          margin-top: 8rem;
           animation: ${upToDown(8, 3.6)} 3.2s ease-in-out infinite alternate;
         }
       }
 
       a:nth-child(4) {
         margin-left: 2rem;
-        margin-top: 19rem;
         animation: ${upToDown(18.8, 4.8)} 3.4s ease-in-out infinite alternate;
 
         @media(max-width: 540px) {
           margin-left: -1rem;
-          margin-top: 17.6rem;
           animation: ${upToDown(17.6, 3.6)} 3.4s ease-in-out infinite alternate;
         }
       }
