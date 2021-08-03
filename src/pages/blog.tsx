@@ -52,7 +52,7 @@ export default function Blog({ blogs }: { blogs: BlogType[] }) {
           title="EddyPBR - Blog sobre programação e dicas para desenvolvedores!" 
           description="Dicas para desenvolvedores - React - Next - Typescript - NodeJS - React Native - Expo - HTML - CSS - javascript - Mongodb - SQL - NoSQL - MySQL"
           url={`${process.env.NEXT_PUBLIC_VERCEL_URL}/blog`}
-          urlImage={`${process.env.NEXT_PUBLIC_VERCEL_URL}/public/eddypbr-cover.jpg`}
+          urlImage={`${process.env.NEXT_PUBLIC_VERCEL_URL}/eddypbr-cover.jpg`}
           type="website"
         />
       </Head>
