@@ -409,7 +409,6 @@ export const Testimonials = styled.section`
     }
 
     & > figure:nth-child(1) {
-      margin-top: -4rem;
       margin-left: 20rem;
       animation: ${upToDown(-4, 3)} 4.8s ease-in-out infinite alternate;
 
@@ -431,7 +430,6 @@ export const Testimonials = styled.section`
 
     & > figure:nth-child(2) {
       margin-left: 68rem;
-      margin-top: 16rem;
       animation: ${upToDown(16, 3)} 3.2s ease-in-out infinite alternate;
 
       @media(max-width: 1170px) {
@@ -451,7 +449,6 @@ export const Testimonials = styled.section`
     }
 
     & > figure:nth-child(3) {
-      margin-top: 32rem;
       margin-left: 3rem;
       animation: ${upToDown(32, 3)} 4s ease-in-out infinite alternate;
 
@@ -472,7 +469,6 @@ export const Testimonials = styled.section`
     }
 
     & > figure:nth-child(4) {
-      margin-top: 46rem;
       margin-left: 52rem;
       animation: ${upToDown(46, 3)} 4.4s ease-in-out infinite alternate;
 
