@@ -23,8 +23,8 @@ export default function Home({ blogs }: { blogs: BlogType[] }) {
         <SEO 
           title="EddyPBR website" 
           description="Desenvolvedor fullstack web e mobile - Trabalhando com Typescript, NodeJS, Next, React, React Native, Expo e mais!"
-          url={process.env.NEXT_PUBLIC_BASE_URL}
-          urlImage={`${process.env.NEXT_PUBLIC_BASE_URL}/public/eddypbr-cover.jpg`}
+          url={process.env.NEXT_PUBLIC_VERCEL_ENV}
+          urlImage={`${process.env.NEXT_PUBLIC_VERCEL_ENV}/public/eddypbr-cover.jpg`}
           type="website"
         />
       </Head>

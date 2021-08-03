@@ -13,7 +13,7 @@ export const Background = styled.div`
   top: 0;
   width: 100%;
   height: 100vh;
-  background-image: url(${process.env.NEXT_PUBLIC_BASE_URL}/images/skill-bg.png);
+  background-image: url(${process.env.NEXT_PUBLIC_VERCEL_ENV}/images/skill-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -125,7 +125,7 @@ export const Services = styled.section`
 export const Skills = styled.section`
   width: 100%;
   min-height: 88.7rem;
-  background-image: url(${process.env.NEXT_PUBLIC_BASE_URL}/images/skill-bg.png);
+  background-image: url(${process.env.NEXT_PUBLIC_VERCEL_ENV}/images/skill-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
