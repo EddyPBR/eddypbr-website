@@ -33,6 +33,7 @@ export const Card = styled.article<SkillCardProps>`
 
     img { 
       width: 100%;
+      height: auto;
       max-width: 5.2rem;
     }
 

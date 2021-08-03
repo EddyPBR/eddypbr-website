@@ -238,7 +238,8 @@ export const Portfolio = styled.section`
 
     & > img {
       width: 100%;
-      max-width: 23.3rem;
+      height: auto;
+      max-width: 23rem;
 
       @media(max-width: 540px) {
         max-width: 18rem;

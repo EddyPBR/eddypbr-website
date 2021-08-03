@@ -11,7 +11,7 @@ export function SkillCard({ title, text, color, imgUrl }: SkillCardProps) {
   return(
     <Card color={color}>
       <div>
-        <img src={imgUrl} alt={title} />
+        <img src={imgUrl} alt={title} width="52" height="52" />
         <strong>{title}</strong>
       </div>
       <p>{text}</p>
