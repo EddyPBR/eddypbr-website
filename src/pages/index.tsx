@@ -37,7 +37,7 @@ export default function Home({ blogs }: { blogs: BlogType[] }) {
               Edvaldo Junior
             </h1>
             <p>
-              Desenvolvedor fullstack contruindo sistemas com servidores, websites e aplicativos mobile todos formando um único sistema.
+              Desenvolvedor fullstack construindo sistemas com servidores, websites e aplicativos mobile todos formando um único sistema.
             </p>
           </MainArticle>
 
