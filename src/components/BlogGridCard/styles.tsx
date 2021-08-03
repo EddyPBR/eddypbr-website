@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Card = styled.article`
   max-width: 29.6rem;
-  height: 44rem;
+  min-height: 44rem;
   margin: 0 auto;
 
   display: flex;
