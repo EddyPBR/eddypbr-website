@@ -24,7 +24,7 @@ export default function Home({ blogs }: { blogs: BlogType[] }) {
           title="EddyPBR website" 
           description="Desenvolvedor fullstack web e mobile - Trabalhando com Typescript, NodeJS, Next, React, React Native, Expo e mais!"
           url={process.env.NEXT_PUBLIC_VERCEL_URL}
-          urlImage={`${process.env.NEXT_PUBLIC_VERCEL_URL}/public/eddypbr-cover.jpg`}
+          urlImage={`${process.env.NEXT_PUBLIC_VERCEL_URL}/eddypbr-cover.jpg`}
           type="website"
         />
       </Head>
