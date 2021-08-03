@@ -245,15 +245,23 @@ export const blogs = [
         <code>&lt;meta property="og:title" content="Canal do youtube de EddyPBR" /&gt;   </code>
         <code>&lt;meta property="og:description"  content="Vídeos sobre projetos de programação legais" /&gt;   </code>
         <code>&lt;meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqK6LN1t6ybpk_a6U_pXPKWy3n723m3t5jP7JMWWUDBW20M8TuzIoO6j6bVrdpmVfCJ_g&usqp=CAU" /&gt;   </code>
+        <code>&lt;meta property="og:image:alt" content="Canal do youtube de EddyPBR" /&gt;   </code>
+        <code>&lt;meta property="og:image:type" content="image/jpg" /&gt;   </code>
+        <code>&lt;meta property="og:image:width" content="1200" /&gt;   </code>
+        <code>&lt;meta property="og:image:height" content="630" /&gt;   </code>
       </pre>
       
       <h2>Explicando as tags:</h2>
       <pre>
-        <code>og:url</b> - A url do seu website;    </code>
-        <code>og:type</b> - O tipo de conteúdo abordado, pode ser: website, blog, enterteinment, game, movie, food, company e etc;    </code>
-        <code>og:title</b> - O título da sua página;    </code>
-        <code>og:description</b> - A descrição da sua página;    </code>
-        <code>og:image</b>: A URL da imagem de capa da sua página o facebook recomenda um tamanho de 1200x627 pixels;    </code>
+        <code>og:url - A url do seu website;    </code>
+        <code>og:type - O tipo de conteúdo abordado, pode ser: website, blog, enterteinment, game, movie, food, company e etc;    </code>
+        <code>og:title - O título da sua página;    </code>
+        <code>og:description - A descrição da sua página;    </code>
+        <code>og:image - A URL absoluta da imagem de capa da sua página o facebook recomenda um tamanho de 1200x627 pixels;    </code>
+        <code>og:image:alt - Texto alternativo em casos de impossibilidade do carregamento da imagem;    </code>
+        <code>og:image:type - Extensão do tipo de arquivo (EX.: jpg, png);    </code>
+        <code>og:image:width - Largura da imagem;    </code>
+        <code>og:image:height - Altura da imagem;    </code>
       </pre>
       
       <h2 id="personalizando-o-twitter">Personalizando o Twitter</h2>
@@ -265,9 +273,11 @@ export const blogs = [
       </pre>
 
       <h2>Explicando as tags:</h2>
-      <p><b>twitter:title</b> - O título da sua página;</p>
-      <p><b>twitter:card</b> - O tamanho da imagem da card do twitter;</p>
-      <p><b>twitter:image</b> - A url da imagem de capa da card no twitter;</p>
+      <pre>
+        <code>twitter:title - O título da sua página;</code>
+        <code>twitter:card - O tamanho da imagem da card do twitter;</code>
+        <code>twitter:image - A url da imagem de capa da card no twitter;</code>
+      </pre>
       
       <h2 id="por-hoje-e-so-pessoal">Por hoje é só pessoal</h2>
       <p>Bem esse foi um guia simplificado de como criar as urls de compartilhamento no facebook e twitter e com algumas personalizações, existem outras diversas meta-tags que são colocadas no &lt;head&gt; dos projetos, caso você esteja lendo isso do blog do EddyPBR, meu blog (risos), pode-se ver no código fonte que existem outras diversas meta-tags.</p>
