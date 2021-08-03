@@ -27,8 +27,8 @@ export default function Letmeask({ project }: { project: ProjectType }) {
         <SEO 
           title={`EddyPBR - Projeto: ${project.title}`}
           description={project.abstract}
-          url={`${process.env.NEXT_PUBLIC_VERCEL_ENV}/portfolio/${href}`}
-          urlImage={`${process.env.NEXT_PUBLIC_VERCEL_ENV}${project.thumbnail}`}
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/portfolio/${href}`}
+          urlImage={`${process.env.NEXT_PUBLIC_BASE_URL}${project.thumbnail}`}
           type="website"
         />
       </Head>

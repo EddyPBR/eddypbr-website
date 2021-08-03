@@ -65,8 +65,8 @@ export default function Portfolio({ projects: projectData }) {
         <SEO 
           title="EddyPBR - Portfólio" 
           description="Portfólio pessoal com projetos utilizando NodeJS - React - NextJS - React Native - Figma - MySQL - NoSQL e afins!"
-          url={`${process.env.NEXT_PUBLIC_VERCEL_ENV}/blog`}
-          urlImage={`${process.env.NEXT_PUBLIC_VERCEL_ENV}/public/eddypbr-cover.jpg`}
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/blog`}
+          urlImage={`${process.env.NEXT_PUBLIC_BASE_URL}/public/eddypbr-cover.jpg`}
           type="website"
         />
       </Head>

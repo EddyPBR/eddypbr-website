@@ -48,8 +48,8 @@ export default function Contato() {
         <SEO 
           title="EddyPBR - Entre em contato comigo!" 
           description="Desenvolvedor fullstack web e mobile - Entre em contato comigo!"
-          url={`${process.env.NEXT_PUBLIC_VERCEL_ENV}/contato`}
-          urlImage={`${process.env.NEXT_PUBLIC_VERCEL_ENV}/public/eddypbr-cover.jpg`}
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/contato`}
+          urlImage={`${process.env.NEXT_PUBLIC_BASE_URL}/public/eddypbr-cover.jpg`}
           type="website"
         />
       </Head>

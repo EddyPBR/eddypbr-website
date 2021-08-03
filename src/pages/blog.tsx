@@ -51,8 +51,8 @@ export default function Blog({ blogs }: { blogs: BlogType[] }) {
         <SEO 
           title="EddyPBR - Blog sobre programação e dicas para desenvolvedores!" 
           description="Dicas para desenvolvedores - React - Next - Typescript - NodeJS - React Native - Expo - HTML - CSS - javascript - Mongodb - SQL - NoSQL - MySQL"
-          url={`${process.env.NEXT_PUBLIC_VERCEL_ENV}/blog`}
-          urlImage={`${process.env.NEXT_PUBLIC_VERCEL_ENV}/public/eddypbr-cover.jpg`}
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/blog`}
+          urlImage={`${process.env.NEXT_PUBLIC_BASE_URL}/public/eddypbr-cover.jpg`}
           type="website"
         />
       </Head>
