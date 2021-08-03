@@ -62,7 +62,7 @@ export const projects = [
     abstract: "Técnica de pomodoro com desafios de relaxamento corporais e oculares em um sistema de leveling up!",
     icon: "/portfolio/moveit/moveit-icon.jpg",
     thumbnail: "/portfolio/moveit/moveit-thumbnail.jpg",
-    url: "/portfolio/move-it",
+    url: "/portfolio/moveit",
     team: ["Edvaldo Junior (EddyPBR)"],
     otherLinks: {
       website: "https://move-it-eddypbr.vercel.app/",
