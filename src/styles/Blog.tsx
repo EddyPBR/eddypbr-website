@@ -81,10 +81,6 @@ export const BlogGrid = styled.section<BlogGridProps>`
   grid-auto-flow: row;
   grid-gap: 6rem;
 
-  @media(max-width: 725px) {
-    grid-row-gap: 6rem;
-  }
-
   @media(max-width: 720px) {
     grid-template-columns: repeat(auto-fill, minmax(26.6rem, 1fr));
   }
