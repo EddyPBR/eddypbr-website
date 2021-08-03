@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import { sanitize } from "isomorphic-dompurify";
 import { projects, ProjectType } from "../../data/projects";
+import { parseStringToDashedUrl } from "../../utils/parseStringToDashedUrl";
 
 import { SEO } from "../../components/SEO";
 import { Badge } from "../../components/Badge";
@@ -17,7 +18,7 @@ export default function Letmeask({ project }: { project: ProjectType }) {
     __html: sanitize(project.content),
   }
 
-  const href = project.title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f:,?-]/g, '').split(" ").join("-");
+  const href = parseStringToDashedUrl(project.title);
 
   return (
     <>
@@ -75,7 +76,7 @@ export default function Letmeask({ project }: { project: ProjectType }) {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const project = projects.find((project) => { 
-    const titleToUrl = project.title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f:,?-]/g, '').split(" ").join("-");
+    const titleToUrl = parseStringToDashedUrl(project.title);
     
     if(titleToUrl === params.title) {
       return titleToUrl;
@@ -93,7 +94,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const paths = projects.map((project) => {
     return {
       params: {
-        title: project.title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f:,?-]/g, '').split(" ").join("-"),
+        title: parseStringToDashedUrl(project.title),
       }
     };
   });

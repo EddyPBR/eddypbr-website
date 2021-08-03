@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import { sanitize } from "isomorphic-dompurify";
 import { blogs, BlogType } from "../../data/blogs";
+import { parseStringToDashedUrl } from "../../utils/parseStringToDashedUrl";
 
 import { SEO } from "../../components/SEO";
 import { Badge } from "../../components/Badge";
@@ -80,7 +81,7 @@ export default function Letmeask({ blog }: { blog: BlogType }) {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const blog = blogs.find((blog) => { 
-    const titleToUrl = blog.title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f:,?-]/g, '').split(" ").join("-");
+    const titleToUrl = parseStringToDashedUrl(blog.title);
     
     if(titleToUrl === params.title) {
       return titleToUrl;
@@ -98,7 +99,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const paths = blogs.map((blog) => {
     return {
       params: {
-        title: blog.title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f:,?-]/g, '').split(" ").join("-"),
+        title: parseStringToDashedUrl(blog.title),
       }
     };
   });
