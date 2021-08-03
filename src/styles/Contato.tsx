@@ -1,4 +1,13 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`;
 
 export const Contact = styled.main`
   width: 90vw;
@@ -103,8 +112,19 @@ export const Form = styled.form`
     align-items: center;
     align-self: center;
 
-    &:hover {
+    &:hover:not(:disabled) {
       filter: brightness(1);
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      
+      > svg {
+        animation: ${rotate} 1.6s linear infinite;
+        font-size: 2.2rem;
+        color: ${props => props.theme.colors.white};
+        margin-right: 0.8rem;
+      }
     }
   }
 `;

@@ -1,5 +1,8 @@
 import Head from "next/head";
 import { useState, FormEvent } from "react";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
+
+import { sendEmail } from "../services/api";
 
 import { SEO } from "../components/SEO";
 import { BackToHomeLink } from "../components/BackToHomeLink";
@@ -11,20 +14,31 @@ export default function Contato() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   function checkIfIsEmpty(values: string[]) {
     const checkedValues = values.map((value => value.trim() !== "" ? true : false ));
     return !checkedValues.includes(false) ? true : false;
   }
 
-  function handleSubmit(event: FormEvent) {
+  async function handleSubmit(event: FormEvent) {
     event.preventDefault();
+    setIsLoading(true);
 
     if( !checkIfIsEmpty([name, email, subject, message]) ) {
       alert("É necessário que todos os campos sejam preenchidos");
     }
 
-    console.log("Pronto para ser enviado!");
+    const payload = { name, email, subject, message };
+
+    try {
+      await sendEmail(payload);
+      alert("Email enviado com sucesso!");
+    } catch {
+      alert("Falha ao enviar o email :( - por favor tente novamente!");
+    } finally {
+      setIsLoading(false);
+    }
   }
 
   return(
@@ -46,7 +60,13 @@ export default function Contato() {
           <input type="text" placeholder="Seu email" onChange={(event) => setEmail(event.target.value)} />
           <input type="text" placeholder="Assunto" onChange={(event) => setSubject(event.target.value)} />
           <textarea placeholder="Mensagem" onChange={(event) => setMessage(event.target.value)} />
-          <button type="submit">Enviar email</button>
+          <button type="submit" disabled={isLoading}>
+            { 
+              isLoading 
+                ? <AiOutlineLoading3Quarters />
+                : "Enviar email"
+            }
+          </button>
         </Form>
 
         <div>
