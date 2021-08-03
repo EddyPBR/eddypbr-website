@@ -46,7 +46,8 @@ export const Card = styled.figure`
 
       span {
         font-family: ${props => props.theme.fonts.title};
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
       }
     }
   }
