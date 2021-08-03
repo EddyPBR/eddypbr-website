@@ -26,13 +26,18 @@ export function SEO({ title, description, url, urlImage, type, articleOgg }: SEO
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <meta name="theme-color" content={theme.colors.primary} />
       <meta name="description" content={description} />
-      <meta property="og:site_name" content="EddyPBR website" />
+      <meta property="og:site_name" content="Edvaldo Junior | @eddypbr" />
       <meta property="og:type" content={type} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
       <meta property="og:image" content={urlImage} />
+      <meta property="og:image:alt" content="Edvaldo Junior | @eddypbr" />
+      <meta property="og:image:type" content="image/jpg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <meta property="article:publisher" content="https://www.facebook.com/eddypbr/" />
+      <meta property="og:image:secure_url" content={urlImage} />
       {
         articleOgg && 
           <>
@@ -49,8 +54,6 @@ export function SEO({ title, description, url, urlImage, type, articleOgg }: SEO
       <meta name="twitter:url" content={url} />
       <meta name="twitter:image" content={urlImage} />
       <meta name="twitter:site" content="@eddypbr" />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
     </>
   );
 }
