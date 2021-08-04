@@ -5,10 +5,6 @@ export const Card = styled.article`
   gap: 3rem;
   align-items: center;
   padding: 0 3rem;
-  
-  @media(max-width: 460px) {
-    display: none;
-  }
 
   @media(max-width: 1300px) {
     padding: 0 1.5rem;
@@ -21,11 +17,16 @@ export const Card = styled.article`
     padding: 0;
   }
 
+  @media(max-width: 460px) {
+    display: none;
+  }
+
   > a {
     width: 100%;
 
     > img {
       width: 100%;
+      height: auto;
       border-radius: 4rem;
     }
   }
