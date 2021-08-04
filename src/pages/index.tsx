@@ -102,7 +102,7 @@ export default function Home({ blogs }: { blogs: BlogType[] }) {
         </article>
 
         <div>
-          <img src="/images/guy.svg" alt="Redes sociais" width={230} height={378} />
+          <img src="/images/guy.svg" alt="Redes sociais" width={230} height={378} loading="lazy" />
 
           <div>
             <a href="https://www.facebook.com/eddypbr/" rel="noopener noreferrer" target="_blank">
