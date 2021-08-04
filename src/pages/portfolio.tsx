@@ -84,7 +84,7 @@ export default function Portfolio({ projects: projectData }) {
           activeProject && (
             <Link href={activeProject?.url || "/"}>
               <ActiveProject isAnimating={animate}>
-                <img src={activeProject?.thumbnail} alt={activeProject?.title} />
+                <img src={activeProject?.thumbnail} alt={activeProject?.title} width={346} height={242} />
               </ActiveProject>
             </Link>
           )
