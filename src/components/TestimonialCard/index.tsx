@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Card } from "./styles";
 
 type TestimonialCardProps = {
@@ -11,7 +12,7 @@ export function TestimonialCard({ imageUrl, author, occupation, comment }: Testi
   return (
     <Card>
       <div>
-        <img src={imageUrl} alt={`Comentário de ${author}`} />
+        <Image src={imageUrl} alt={`Comentário de ${author}`} height={56} width={56}/>
         <div>
           <cite>{author}</cite>
           <span>{occupation}</span>
