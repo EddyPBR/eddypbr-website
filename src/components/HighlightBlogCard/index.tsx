@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 import { Badge } from "../Badge";
 
@@ -20,7 +19,7 @@ export function HighlightBlogCard({ thumbnail, title, tags, authors, createdAt, 
     <Card>
       <Link href={url}>
         <a>
-          <Image src={thumbnail} alt={`${title}, por ${authors}`} width={510} height={358} />
+          <img src={thumbnail} alt={`${title}, por ${authors}`} width={510} height={358} />
         </a>
       </Link>
       <div>

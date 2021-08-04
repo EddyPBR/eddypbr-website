@@ -13,7 +13,8 @@ export const Card = styled.article`
     max-width: 29.6rem;
     width: 100%;
     
-    img {
+    > img {
+      width: 100%;
       border-radius: 0.8rem;
     }
   }

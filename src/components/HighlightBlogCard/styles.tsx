@@ -24,7 +24,8 @@ export const Card = styled.article`
   > a {
     width: 100%;
 
-    img {
+    > img {
+      width: 100%;
       border-radius: 4rem;
     }
   }

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import { MdArrowDropDown } from "react-icons/md";
 
@@ -25,7 +24,7 @@ export function DropdownProject({ title, categories, imageUrl, text, dropped, ha
     <Project isDropped={isDropped} onClick={handleFunction ? handleFunction : () => setIsDropped(!isDropped)}>
       <header>
         <div>
-          <Image src={imageUrl} alt={`${title} - por EddyPBR`} width={74} height={74} />
+          <img src={imageUrl} alt={`${title} - por EddyPBR`} width={74} height={74} />
           <div>
             <strong>{title}</strong>
             <span>{category}</span>

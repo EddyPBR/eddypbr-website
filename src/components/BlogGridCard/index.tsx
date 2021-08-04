@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 import { Badge } from "../Badge";
 
@@ -20,7 +19,7 @@ export function BlogGridCard({ thumbnail, title, tags, authors, createdAt, abstr
     <Card>
       <Link href={url}>
         <a>
-          <Image src={thumbnail} alt={`${title}, por ${authors}`} width={296} height={208} />
+          <img src={thumbnail} alt={`${title}, por ${authors}`} width={296} height={208} />
         </a>
       </Link>
       <div>
