@@ -47,15 +47,11 @@ export const Project = styled.article<ProjectProps>`
       align-items: center;
       gap: 0.8rem;
 
-      > img {
-        width: 100%;
-        height: auto;
-        max-width: 4.8rem;
-        max-height: 4.8rem;
+      img {
         border-radius: 0.8rem;
       }
 
-      > div {
+      > div:last-child {
         width: 100%;
 
         display: flex;
