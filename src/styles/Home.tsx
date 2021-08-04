@@ -13,7 +13,7 @@ export const Background = styled.div`
   top: 0;
   width: 100%;
   height: 100vh;
-  background-image: url("/images/skill-bg.png");
+  background-image: url("/images/header-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
