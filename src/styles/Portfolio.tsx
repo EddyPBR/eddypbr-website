@@ -82,7 +82,7 @@ export const Blobs = styled.div`
   overflow: hidden;
   max-width: 100%;
 
-  > img {
+  > svg {
     position: fixed;
     z-index: -1;
     width: 40%;
