@@ -67,21 +67,21 @@ export default function Home({ blogs }: { blogs: BlogType[] }) {
           <SkillCard 
             title="NodeJS"
             text="Desenvolvimento de API’s com NodeJS + Typescript consumindo um banco de dados SQL ou NoSQL."
-            imgUrl="./images/nodejs-eddypbr-skills.png"
+            imgUrl="/images/nodejs-eddypbr-skills.png"
             color="#539E43"
           />
 
           <SkillCard 
             title="NextJS"
             text="Desenvolvimento de websites e interfaces web utilizando o NextJS para otimizar o SEO do seu sistema."
-            imgUrl="./images/nextjs-eddypbr-skills.png"
+            imgUrl="/images/nextjs-eddypbr-skills.png"
             color="#E44482"
           />
 
           <SkillCard 
             title="React native"
             text="Desenvolvimento de aplicativos mobile android e iOS para que seus clientes tenham seus sistemas em mãos."
-            imgUrl="./images/react-eddypbr-skills.png"
+            imgUrl="/images/react-eddypbr-skills.png"
             color="#4DBCDF"
           />
         </Container>
@@ -102,7 +102,7 @@ export default function Home({ blogs }: { blogs: BlogType[] }) {
         </article>
 
         <div>
-          <img src="./images/guy.svg" alt="Redes sociais" />
+          <img src="/images/guy.svg" alt="Redes sociais" />
 
           <div>
             <a href="https://www.facebook.com/eddypbr/" rel="noopener noreferrer" target="_blank">
