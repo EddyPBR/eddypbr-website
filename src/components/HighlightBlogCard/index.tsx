@@ -19,7 +19,7 @@ export function HighlightBlogCard({ thumbnail, title, tags, authors, createdAt, 
     <Card>
       <Link href={url}>
         <a>
-          <img src={thumbnail} alt={`${title}, por ${authors}`} width={510} height={358} />
+          <img src={thumbnail} alt={`${title}, por ${authors}`} width={510} height={358} loading="lazy" />
         </a>
       </Link>
       <div>

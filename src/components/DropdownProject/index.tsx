@@ -24,7 +24,7 @@ export function DropdownProject({ title, categories, imageUrl, text, dropped, ha
     <Project isDropped={isDropped} onClick={handleFunction ? handleFunction : () => setIsDropped(!isDropped)}>
       <header>
         <div>
-          <img src={imageUrl} alt={`${title} - por EddyPBR`} width={74} height={74} />
+          <img src={imageUrl} alt={`${title} - por EddyPBR`} width={74} height={74} loading="lazy" />
           <div>
             <strong>{title}</strong>
             <span>{category}</span>

@@ -19,7 +19,7 @@ export function BlogGridCard({ thumbnail, title, tags, authors, createdAt, abstr
     <Card>
       <Link href={url}>
         <a>
-          <img src={thumbnail} alt={`${title}, por ${authors}`} width={296} height={208} />
+          <img src={thumbnail} alt={`${title}, por ${authors}`} width={296} height={208} loading="lazy" />
         </a>
       </Link>
       <div>

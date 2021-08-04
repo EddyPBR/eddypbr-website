@@ -71,7 +71,7 @@ export default function Contato() {
 
         <div>
           <h1>Vamos conversar?</h1>
-          <img src="./images/email.svg" alt="Fale com EddyPBR enviando um email" width={449} height={271} />
+          <img src="./images/email.svg" alt="Fale com EddyPBR enviando um email" width={449} height={271} loading="lazy" />
         </div>
       </Contact>
 
