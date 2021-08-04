@@ -138,10 +138,10 @@ export default function Home({ blogs }: { blogs: BlogType[] }) {
         <p>Alguns depoimentos de colegas de trabalho e clientes que já participaram de projetos comigo ao longo da minha carreira como desenvolvedor.</p>
 
         <article>
-          <TestimonialCard  imageUrl="/images/testimonial/felix-vicente.png" author="Félix Vicente" occupation="Desenvolvedor - Agência Ellis" comment="Trabalhei com Edvaldo em diversos projetos, ele sempre cuidou muito bem da transparência com o cliente e desenvolveu interfaces incríveis!" />
-          <TestimonialCard  imageUrl="/images/testimonial/jonatas-elyon.png" author="Jonatas Elyon" occupation="Diretor de crm - Braiscompany" comment="Fundei junto a Edvaldo uma Startup, juntos elaboramos diversos projetos e todos elogiados por nossos clientes, o cara é fera!" />
-          <TestimonialCard  imageUrl="/images/testimonial/jhonny-porto.png" author="Jhonny Porto" occupation="Cantor e compositor" comment="Seu trabalho é excepcional, Edvaldo sempre me atendeu muito bem e criou um belíssimo site moderno tudo que um cantor como eu precisa." />
-          <TestimonialCard  imageUrl="/images/testimonial/lucas-andrade.png" author="Lucas Andrade" occupation="UI design - Freelancer" comment="Criei diversas interfaces para projetos juntos com Edvaldo e em todos Edvaldo sempre se manteve muito fiel e com grandes sacadas em animações!" />
+          <TestimonialCard  imageUrl="/images/testimonial/felix-vicente.webp" author="Félix Vicente" occupation="Desenvolvedor - Agência Ellis" comment="Trabalhei com Edvaldo em diversos projetos, ele sempre cuidou muito bem da transparência com o cliente e desenvolveu interfaces incríveis!" />
+          <TestimonialCard  imageUrl="/images/testimonial/jonatas-elyon.webp" author="Jonatas Elyon" occupation="Diretor de crm - Braiscompany" comment="Fundei junto a Edvaldo uma Startup, juntos elaboramos diversos projetos e todos elogiados por nossos clientes, o cara é fera!" />
+          <TestimonialCard  imageUrl="/images/testimonial/jhonny-porto.webp" author="Jhonny Porto" occupation="Cantor e compositor" comment="Seu trabalho é excepcional, Edvaldo sempre me atendeu muito bem e criou um belíssimo site moderno tudo que um cantor como eu precisa." />
+          <TestimonialCard  imageUrl="/images/testimonial/lucas-andrade.webp" author="Lucas Andrade" occupation="UI design - Freelancer" comment="Criei diversas interfaces para projetos juntos com Edvaldo e em todos Edvaldo sempre se manteve muito fiel e com grandes sacadas em animações!" />
         </article>
       </Testimonials>
 
