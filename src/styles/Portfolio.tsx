@@ -51,7 +51,7 @@ export const ProjectsBox = styled.main`
     padding-top: 20px !important;
   }
 
-  > div {
+  > section {
     width: 100%;
 
     display: flex;

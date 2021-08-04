@@ -73,11 +73,11 @@ export default function Portfolio({ projects: projectData }) {
 
       <Container>
         <ProjectsBox>
-          <div>
+          <section>
             {
               projects.map((project, index) => <DropdownProject key={index} title={project.title} text={project.abstract} categories={project.categories} imageUrl={project.icon} dropped={project.isActive} handleFunction={() => handleActiveProject(index)} />)
             }
-          </div>
+          </section>
         </ProjectsBox>
 
         {
@@ -121,9 +121,6 @@ export default function Portfolio({ projects: projectData }) {
           </linearGradient>
         </defs>
       </svg>
-
-        {/* <Image src="/images/blob-portfolio-middle.svg" alt="Veja o portfólio de EddyPBR" width={468} height={690} /> */}
-        {/* <Image src="/images/blob-portfolio-bottom.svg" alt="Veja o portfólio de EddyPBR" width={446} height={372} /> */}
       </Blobs>
       
       <BackToHomeLink />
