@@ -11,7 +11,7 @@ export type BlogCardProps = {
 export function BlogCard({ title, thumbnail, url }: BlogCardProps) {
   return(
     <Card>
-      <img src={thumbnail} alt="test" />
+      <img src={thumbnail} alt={title} width={270} height={190} />
 
       <div>
         <strong>{title}</strong>
