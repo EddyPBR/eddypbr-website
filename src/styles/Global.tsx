@@ -1,6 +1,20 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
+
+import RobotoRegular from "@fontsource/roboto/400.css";
+import RobotoBold from "@fontsource/roboto/700.css";
+import NunitoRegular from "@fontsource/nunito/400.css";
+import NunitoBold from "@fontsource/nunito/700.css";
+
+const Fonts = css`
+  ${RobotoRegular}
+  ${RobotoBold}
+  ${NunitoRegular}
+  ${NunitoBold}
+`;
 
 export const GlobalStyle = createGlobalStyle`
+  ${Fonts};
+
   * {
     margin: 0;
     padding: 0;
